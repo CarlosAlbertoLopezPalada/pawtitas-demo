@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ID Pawtitas</title>
+<title>BOOPID</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
@@ -83,9 +83,9 @@ body{background:#EEF2F7;display:flex;align-items:center;justify-content:center;p
 </div>
 <div class="stage">
   <aside class="pitch">
-    <div class="pitch-tag">Demo interactivo · ID Pawtitas v3</div>
-    <h1 id="pt"><span style="color:#6C3FE8">ID</span> <span style="color:#FF6B6B">Paw</span><span style="color:#00B4D8">titas</span> — La primera red social de <em>mascotas en Honduras</em>.</h1>
-    <p id="pd">17 módulos funcionales registrados ante DIGEPIH. Biometría nasal PawID, PawMatch, mascotas perdidas geolocalizadas, paseo GPS, chat en tiempo real y módulos de IA.</p>
+    <div class="pitch-tag">Demo interactivo · BOOPID v3</div>
+    <h1 id="pt">Inicia sesión de forma <em>rápida y segura</em>.</h1>
+    <p id="pd">17 módulos funcionales registrados ante DIGEPIH. Biometría nasal BoopID, BoopMatch, mascotas perdidas geolocalizadas, paseo GPS, chat en tiempo real y módulos de IA.</p>
     <div class="pitch-pills" id="pp">
       <div class="pitch-pill"><span class="dot" style="background:#00B4D8"></span>NRU biométrico único e irrepetible</div>
       <div class="pitch-pill"><span class="dot" style="background:#F9C846"></span>Piloto: Tegucigalpa, M.D.C. — Honduras</div>
@@ -94,10 +94,10 @@ body{background:#EEF2F7;display:flex;align-items:center;justify-content:center;p
     <div class="pitch-nav">
       <button class="active" onclick="goScreen('login')">Login</button>
       <button onclick="goScreen('home')">Inicio</button>
-      <button onclick="goScreen('match')">PawMatch</button>
+      <button onclick="goScreen('match')">BoopMatch</button>
       <button onclick="goScreen('explore')">Explorar</button>
       <button onclick="goScreen('perfil')">Perfil</button>
-      <button onclick="goScreen('pawid')">PawID</button>
+      <button onclick="goScreen('pawid')">BoopID</button>
       <button onclick="goScreen('carnet')">Carnet</button>
       <button onclick="goScreen('denuncia')">Denuncia</button>
       <button onclick="goScreen('chat')">Chat</button>
@@ -116,10 +116,9 @@ body{background:#EEF2F7;display:flex;align-items:center;justify-content:center;p
     </div>
   <aside class="pitch-right">
     <div>
-      <h2><span class="pr-id">ID</span> <span class="pr-paw">Paw</span><span class="pr-ti">ti</span><span class="pr-tas">tas</span></h2>
-      <p style="margin-top:6px;font-size:15px;color:#6C3FE8;font-weight:700">La primera red social de mascotas en Honduras</p>
+      <img src="boopid-logo.png" alt="BOOPID — ciudadanos de 4 patitas" style="width:100%;max-width:280px;height:auto;display:block"/>
     </div>
-    <p>17 módulos funcionales registrados ante DIGEPIH. Biometría nasal PawID, PawMatch, mascotas perdidas geolocalizadas, paseo GPS, chat en tiempo real y módulos de IA.</p>
+    <p>17 módulos funcionales registrados ante DIGEPIH. Biometría nasal BoopID, BoopMatch, mascotas perdidas geolocalizadas, paseo GPS, chat en tiempo real y módulos de IA.</p>
     <div style="display:flex;flex-direction:column;gap:8px">
       <div class="pr-badge"><span style="width:8px;height:8px;border-radius:50%;background:#6C3FE8"></span>Registro biométrico nasal único</div>
       <div class="pr-badge"><span style="width:8px;height:8px;border-radius:50%;background:#00B4D8"></span>Integrado con la Alcaldía del D.C.</div>
@@ -132,8 +131,8 @@ body{background:#EEF2F7;display:flex;align-items:center;justify-content:center;p
 </div>
 <script>
 const PITCH={
-  login:{t:'Inicia sesión de forma <em>rápida y segura</em>.',d:'Accede con tu correo y contraseña, con tu cuenta de Google o Apple, o usa la huella nasal de tu mascota como llave biométrica. Tu información siempre protegida.',pills:[['#00B4D8','Correo + contraseña con código de verificación'],['#F9C846','Acceso rápido con Google o Apple'],['#FF6B6B','Acceso biométrico con la nariz de tu mascota']]},
-  home:{t:'La comunidad de <em>mascotas de Tegucigalpa</em>.',d:'Mira publicaciones de mascotas de tu comunidad, vota por la Mascota del Día, dale like a tus favoritas, comenta y comparte con amigos.',pills:[['#00B4D8','Publicaciones de tu colonia y ciudad'],['#F9C846','Mascota del Día — vota por tu favorita'],['#FF6B6B','Like, comentar y compartir con amigos']]},
+  login:{t:'Inicia sesión de forma <em>rápida y segura</em>.',d:'Accede con tu correo y contraseña, o con tu cuenta de Google o Apple. Tu información siempre protegida.',pills:[['#00B4D8','Correo + contraseña con código de verificación'],['#F9C846','Acceso rápido con Google o Apple'],['#FF6B6B','Tus datos siempre protegidos y cifrados']]},
+  home:{t:'La comunidad de <em>mascotas de Tegucigalpa</em>.',d:'Mira publicaciones de mascotas de tu comunidad, vota por la Mascota del Día, dale Boop a tus favoritas, comenta y comparte con amigos.',pills:[['#00B4D8','Publicaciones de tu colonia y ciudad'],['#F9C846','Mascota del Día — vota por tu favorita'],['#FF6B6B','Boop, comentar y compartir con amigos']]},
   match:{t:'Encuentra <em>compañeros de juego</em> para tu mascota.',d:'La app analiza qué mascotas cercanas son más compatibles con la tuya según especie, tamaño, edad, distancia y personalidad. Si ambos dueños aceptan, se abre un chat privado para coordinar.',pills:[['#00B4D8','Compatibilidad calculada automáticamente'],['#F9C846','Match mutuo desbloquea el chat privado'],['#FF6B6B','Filtra por distancia, especie y más']]},
   explore:{t:'Descubre todo lo que <em>la app ofrece</em>.',d:'Ranking semanal con votación, mapa de mascotas perdidas con reportes, análisis emocional de tu mascota por foto, recomendaciones personalizadas y tienda con productos en Lempiras.',pills:[['#00B4D8','Vota por tu mascota favorita cada día'],['#F9C846','Tienda con productos y servicios locales'],['#FF6B6B','Recomendaciones personalizadas para tu mascota']]},
   perfil:{t:'Tu espacio y el de <em>tus mascotas</em>.',d:'Administra la información de tu mascota: datos, vacunas, fotos y estadísticas. Puedes registrar varias mascotas. Si la app detecta algo con inteligencia artificial, tú siempre puedes corregirlo.',pills:[['#00B4D8','Registra varias mascotas en un solo perfil'],['#F9C846','La corrección manual del dueño siempre manda'],['#FF6B6B','Estadísticas de paseos, puntos y ranking']]},
@@ -142,10 +141,10 @@ const PITCH={
   denuncia:{t:'Reporta situaciones de <em>maltrato o abandono animal</em>.',d:'Si ves un animal en peligro, puedes reportarlo en 5 pasos con foto y ubicación. Según la gravedad, se escala a las autoridades: desde control animal hasta la Policía Nacional.',pills:[['#00B4D8','4 niveles de urgencia con tiempos de respuesta'],['#F9C846','La app verifica las fotos automáticamente'],['#FF6B6B','Tu identidad como denunciante queda protegida']]},
   chat:{t:'Conversa con otros dueños <em>después de hacer match</em>.',d:'Cuando dos dueños se aceptan mutuamente, se abre un chat privado para coordinar paseos, encuentros en parques o compartir experiencias de sus mascotas.',pills:[['#00B4D8','Se activa automáticamente tras el match mutuo'],['#F9C846','Comparte fotos y propón fechas de encuentro'],['#FF6B6B','Mensajes en tiempo real con confirmación de lectura']]},
   paseo:{t:'Registra los <em>paseos con tu mascota</em>.',d:'Activa el paseo y la app traza la ruta en el mapa mientras caminas. Al finalizar ves la distancia, el tiempo y puedes compartir tu logro en la comunidad para ganar puntos.',pills:[['#00B4D8','Traza la ruta sobre el mapa de tu colonia'],['#F9C846','Historial completo de todos tus paseos'],['#FF6B6B','Comparte tu logro y gana puntos']]},
-  notif:{t:'Entérate de todo lo que pasa <em>con tu mascota</em>.',d:'Recibe alertas cuando alguien da like a tu publicación, cuando tienes un nuevo match, cuando alguien avista a tu mascota perdida o cuando se acerca una vacuna.',pills:[['#00B4D8','7 tipos diferentes de notificaciones'],['#F9C846','Contador de alertas pendientes por leer'],['#FF6B6B','Toca la notificación para ir directo a la pantalla']]},
+  notif:{t:'Entérate de todo lo que pasa <em>con tu mascota</em>.',d:'Recibe alertas cuando alguien boopea tu publicación, cuando tienes un nuevo match, cuando alguien avista a tu mascota perdida o cuando se acerca una vacuna.',pills:[['#00B4D8','7 tipos diferentes de notificaciones'],['#F9C846','Contador de alertas pendientes por leer'],['#FF6B6B','Toca la notificación para ir directo a la pantalla']]},
   post:{t:'Publica fotos y videos <em>de tu mascota</em>.',d:'Sube una foto o video desde tu cámara o galería. La app detecta automáticamente la especie, raza y estado. Tú puedes corregir lo que quieras antes de publicar.',pills:[['#00B4D8','Detección automática de especie y raza'],['#F9C846','Tú corriges lo que la app detecte — tú mandas'],['#FF6B6B','Se revisa el contenido antes de publicar']]},
   planes:{t:'Elige el plan que mejor <em>se adapte a ti</em>.',d:'Desde el plan gratuito con funciones esenciales, hasta Platinum con análisis emocional y teleconsulta veterinaria. Plan Familiar para hogares con hasta 5 mascotas.',pills:[['#F9C846','Plan Básico gratis con lo esencial'],['#059669','Plan Familiar — hasta 5 mascotas en una cuenta'],['#D97706','Platinum — análisis emocional y teleconsulta']]},
-  vacunas:{t:'Carnet de vacunación con <em>calendario inteligente</em>.',d:'Historial de vacunas aplicadas, próximas dosis con cuenta regresiva, jornadas del gobierno según tu colonia y descuentos exclusivos en veterinarias cercanas.',pills:[['#22C55E','Calendario con próximas vacunas y recordatorios'],['#6C3FE8','Jornadas del gobierno según tu ubicación'],['#FF6B6B','Descuentos exclusivos en veterinarias aliadas']]},
+  vacunas:{t:'Carnet de vacunación con <em>calendario inteligente</em>.',d:'Historial de vacunas aplicadas, próximas dosis con cuenta regresiva, jornadas del gobierno según tu colonia y descuentos en veterinarias, pet shops y comercios afiliados.',pills:[['#22C55E','Calendario con próximas vacunas y recordatorios'],['#6C3FE8','Jornadas del gobierno según tu ubicación'],['#FF6B6B','Descuentos en veterinarias, pet shops y comercios afiliados']]},
   registro:{t:'Registra a tu mascota <em>ante la Alcaldía</em>.',d:'Completa el formulario con tus datos y los de tu mascota en 5 pasos. Al finalizar se genera el código de identificación único y se notifica a la Veterinaria Municipal.',pills:[['#6C3FE8','Tus datos y los de tu mascota quedan vinculados'],['#00B4D8','La Veterinaria Municipal recibe la notificación'],['#F9C846','Se genera el carnet digital oficial']]},
 };
 window.updatePitch=function(s){const d=PITCH[s];if(!d)return;document.getElementById('pt').innerHTML=d.t;document.getElementById('pd').textContent=d.d;document.getElementById('pp').innerHTML=d.pills.map(([c,t])=>`<div class="pitch-pill"><span class="dot" style="background:${c}"></span>${t}</div>`).join('');};
@@ -186,10 +185,10 @@ const U={
 
 // ─── DATA ─────────────────────────────────
 const USERS={
-  1:{id:1,name:'Andrea Reyes', ini:'AR',src:U.andr,bio:'Mamá de Pimpy | Col. Palmira',  pts:2400,rank:2,fol:1203},
-  2:{id:2,name:'Carlos Mejía', ini:'CM',src:U.carl,bio:'Papá de Laika | Col. Kennedy',  pts:1890,rank:4,fol:876},
+  1:{id:1,name:'Andrea Reyes', ini:'AR',src:U.andr,bio:'Dueño(a) de Pimpy | Col. Palmira',  pts:2400,rank:2,fol:1203},
+  2:{id:2,name:'Carlos Mejía', ini:'CM',src:U.carl,bio:'Dueño(a) de Laika | Col. Kennedy',  pts:1890,rank:4,fol:876},
   3:{id:3,name:'Don Manuel',   ini:'DM',src:null,  bio:'12 años con Odie | Barrio Abajo',pts:3100,rank:1,fol:2340},
-  4:{id:4,name:'Sofía Torres', ini:'ST',src:null,  bio:'Cat mom de Donatelo | Centro',   pts:1200,rank:5,fol:654},
+  4:{id:4,name:'Sofía Torres', ini:'ST',src:null,  bio:'Dueño(a) de Donatelo | Centro',   pts:1200,rank:5,fol:654},
   5:{id:5,name:'Laura Pineda', ini:'LP',src:null,  bio:'Naranjita es mi mundo | Lomas',  pts:1650,rank:3,fol:987},
 };
 const PETS={
@@ -200,19 +199,19 @@ const PETS={
   5:{id:5,name:'Naranjita',sp:'Gato',br:'Tabby Atigrado',  age:'5 años',w:'5.5 kg',ow:5,img:U.naran,nid:'NAS-9W2X-02-0056',vac:['Rabia','Leucemia felina','Panleucopenia'], neu:true, reg:'05/08/2023'},
 };
 const FEED_POSTS=[
-  {id:1,uid:1,pid:1,img:U.pimpy,cap:'Lista para su paseo dominical por la Palmira. Pimpy siempre radiante! #IDPawtitas',likes:347,liked:false,comments:[{uid:2,t:'Que divina!!'},{uid:5,t:'Ese moñito es todo.'}],time:'2h'},
+  {id:1,uid:1,pid:1,img:U.pimpy,cap:'Lista para su paseo dominical por la Palmira. Pimpy siempre radiante! #BOOPID',likes:347,liked:false,comments:[{uid:2,t:'Que divina!!'},{uid:5,t:'Ese moñito es todo.'}],time:'2h'},
   {id:2,uid:2,pid:2,img:U.laika,cap:'Laika de copiloto rumbo a las montañas. 4 años y cada día más aventurera. #LaikaAventurera',likes:412,liked:false,comments:[{uid:1,t:'Abrazo enorme para Laika!'}],time:'4h'},
   {id:3,uid:3,pid:3,img:U.odie, cap:'12 años juntos. Odie llegó cachorro y hoy es el abuelo más sabio del barrio. #OdieEterno',likes:891,liked:false,comments:[{uid:1,t:'Esto me hizo llorar. Hermoso.'},{uid:4,t:'Los mestizos son los más leales.'}],time:'6h'},
   {id:4,uid:4,pid:4,img:U.dona, cap:'Donatelo descubrió que la cámara existe. Ahora posa como modelo. #Donatelo',likes:523,liked:false,comments:[{uid:5,t:'Esos ojos!! Parece de revista.'}],time:'8h'},
   {id:5,uid:5,pid:5,img:U.naran,cap:'Naranjita atrapando rayos de sol. La vida perfecta según ella. #GataTabby',likes:298,liked:false,comments:[],time:'10h'},
 ];
 const NOTIFS=[
-  {id:1,type:'like',    msg:'Don Manuel le dio like a tu post de Pimpy', time:'5min', read:false, ic:'heart'},
-  {id:2,type:'match',   msg:'PawMatch con Laika — el chat está disponible!',time:'20min',read:false,ic:'paw'},
+  {id:1,type:'like',    msg:'Don Manuel boopeó tu post de Pimpy', time:'5min', read:false, ic:'heart'},
+  {id:2,type:'match',   msg:'BoopMatch con Laika — el chat está disponible!',time:'20min',read:false,ic:'paw'},
   {id:3,type:'comment', msg:'Laura Pineda comentó en tu publicación',     time:'1h',  read:false, ic:'chat'},
   {id:4,type:'sighting',msg:'Avistamiento de Bobby en Col. Kennedy',       time:'2h',  read:true,  ic:'pin'},
   {id:5,type:'vaccine', msg:'Vacuna de Rabia de Pimpy vence en 30 días',  time:'1d',  read:true,  ic:'shield'},
-  {id:6,type:'like',    msg:'Carlos Mejía le dio like a tu publicación',   time:'1d',  read:true,  ic:'heart'},
+  {id:6,type:'like',    msg:'Carlos Mejía boopeó tu publicación',   time:'1d',  read:true,  ic:'heart'},
   {id:7,type:'rank',    msg:'Odie A es la Mascota del Día — 1,891 votos!', time:'2d', read:true,  ic:'trophy'},
 ];
 const RANK=[
@@ -221,8 +220,8 @@ const RANK=[
 ];
 const CHALLENGES=[
   {id:1,t:'Paseo del Lunes',   desc:'Registra un paseo de 1 km esta semana',           pts:150,ends:'3 días',joined:false,ic:'walk'},
-  {id:2,t:'Foto con tu mascota',desc:'Publica una foto usando #MiPawtita',              pts:100,ends:'5 días',joined:false,ic:'camera'},
-  {id:3,t:'Embajador de Colonia',desc:'Consigue 5 matches en tu misma colonia',         pts:200,ends:'7 días',joined:false,ic:'pin'},
+  {id:2,t:'Foto con tu mascota',desc:'Publica una foto usando #MiBoop',              pts:100,ends:'5 días',joined:false,ic:'camera'},
+  {id:3,t:'Embajador de la APP',desc:'Consigue 5 matches en la app',         pts:200,ends:'7 días',joined:false,ic:'pin'},
 ];
 const PRODUCTOS=[
   {id:1,n:'Alimento Premium 15kg',   p:'L. 850', cat:'Nutrición',    col:'#F9C846'},
@@ -276,11 +275,29 @@ const STROKE={
   image:'M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.5 10a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM21 15l-5-5L5 21',
   walk:'M13 4a1 1 0 100-2 1 1 0 000 2zM5.5 23l2-8.5 3.5 3 3-7 5 3',
   vaccine:'M9 2v6M15 2v6M4 10h16M4 10v10a2 2 0 002 2h12a2 2 0 002-2V10M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01',
+  phone:'M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z',
+  flame:'M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z',
+  building:'M4 21V7l8-4 8 4v14M4 21h16M9 21v-5h6v5M8 10h.01M12 10h.01M16 10h.01',
+  chev:'M6 9l6 6 6-6',
 };
 function Ico({n,s=20,c='currentColor',sw=1.8,fill=false}){
   if(PATHS[n])return <svg width={s} height={s} viewBox="0 0 24 24" fill={c}><path d={PATHS[n]}/></svg>;
   const d=STROKE[n]||'';
   return <svg width={s} height={s} viewBox="0 0 24 24" fill={fill?c:'none'} stroke={c} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round">{d.split(' M').map((p,i)=><path key={i} d={i===0?p:'M'+p}/>)}</svg>;
+}
+// Boop — naricita-corazón en círculo (variante 2)
+function BoopIco({s=16,on=false}){
+  if(on)return(<svg width={s} height={s} viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10.6" fill="#FFDCDC" stroke="#FF6B6B" strokeWidth="1.1"/>
+    <path fill="#FF6B6B" d="M12 12.5C8.9 10 7 8.4 7 6.6 7 5.3 8 4.3 9.3 4.3c.9 0 1.8.5 2.2 1.3h1c.4-.8 1.3-1.3 2.2-1.3C16 4.3 17 5.3 17 6.6c0 1.8-1.9 3.4-5 5.9z"/>
+    <path d="M12 12.4V14.3M12 14.3C12 15.5 11 16.2 9.7 16.3M12 14.3C12 15.5 13 16.2 14.3 16.3" fill="none" stroke="#C0392B" strokeWidth="1.2" strokeLinecap="round"/>
+    <ellipse cx="9.9" cy="6.4" rx="1.3" ry="0.85" fill="#fff" opacity="0.6" transform="rotate(-32 9.9 6.4)"/>
+  </svg>);
+  return(<svg width={s} height={s} viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10.6" fill="#FFE1EC" stroke="#F5A9C6" strokeWidth="1.1"/>
+    <path fill="#F58AB4" d="M12 12.5C8.9 10 7 8.4 7 6.6 7 5.3 8 4.3 9.3 4.3c.9 0 1.8.5 2.2 1.3h1c.4-.8 1.3-1.3 2.2-1.3C16 4.3 17 5.3 17 6.6c0 1.8-1.9 3.4-5 5.9z"/>
+    <path d="M12 12.4V14.3M12 14.3C12 15.5 11 16.2 9.7 16.3M12 14.3C12 15.5 13 16.2 14.3 16.3" fill="none" stroke="#D9739B" strokeWidth="1.2" strokeLinecap="round"/>
+  </svg>);
 }
 
 // ─── BASE COMPONENTS ──────────────────────
@@ -316,11 +333,13 @@ function SBar(){
 // LOGIN — M01
 // ═════════════════════════════════════════
 function AHeader({openNotif,cnt=0,openPlanes,openDenuncia,openWalk,openVacuna}){return<div style={{padding:'6px 14px',display:'flex',alignItems:'center',justifyContent:'space-between',borderBottom:`1px solid ${C.bd}`,background:'rgba(223,240,250,.92)',backdropFilter:'blur(12px)',flexShrink:0}}>
-  <div style={{display:'flex',alignItems:'center',gap:7}}><div style={{width:26,height:26,borderRadius:7,background:C.gA,display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="paw" s={13} c={C.w}/></div><span style={{fontFamily:"'Fredoka One',cursive",fontSize:16}}>
-  <span style={{color:C.b}}>ID </span>
-  <span style={{color:C.r}}>Paw</span>
-  <span style={{color:C.g}}>ti</span>
-  <span style={{color:'#4A148C'}}>tas</span>
+  <div style={{display:'flex',alignItems:'center',gap:7}}><span style={{fontFamily:"'Fredoka One',cursive",fontSize:18,letterSpacing:.3}}>
+  <span style={{color:C.b}}>B</span>
+  <span style={{color:C.r}}>O</span>
+  <span style={{color:C.a}}>O</span>
+  <span style={{color:C.r}}>P</span>
+  <span style={{color:C.g}}>I</span>
+  <span style={{color:'#4A148C'}}>D</span>
 </span></div>
   <div style={{display:'flex',alignItems:'center',gap:10}}>
     <div style={{cursor:'pointer'}} onClick={openWalk}><Ico n="paw" s={17} c={C.a}/></div>
@@ -351,14 +370,14 @@ function LoginScreen({onLogin}){
   const goOtp=()=>{setLoading(true);setTimeout(()=>{setLoading(false);onLogin();},1200);};
   const startBio=()=>{setBio(true);setBioPct(0);let p=0;const iv=setInterval(()=>{p+=2;setBioPct(p);if(p>=100){clearInterval(iv);setTimeout(()=>{setBio(false);onLogin();},400);}},30);};
   return(<div style={{flex:1,display:'flex',flexDirection:'column',background:'#0A0817',position:'relative',overflow:'hidden'}}>
-    <div style={{flex:1,display:'flex',flexDirection:'column',padding:'16px 20px 24px',overflow:'auto',position:'relative'}}>
+    <div style={{flex:1,display:'flex',flexDirection:'column',justifyContent:'center',padding:'20px',overflow:'auto',position:'relative'}}>
     {PAWS.map((pw,i)=><div key={i} style={{position:'absolute',left:pw.x,top:pw.y,transform:`rotate(${pw.r}deg)`,pointerEvents:'none',zIndex:0}}>
       <svg width={pw.s} height={pw.s} viewBox="0 0 24 24" fill={pw.c}><path d="M12 2.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zm-6 3a2 2 0 110 4 2 2 0 010-4zm12 0a2 2 0 110 4 2 2 0 010-4zM5.5 11a2 2 0 110 4 2 2 0 010-4zm13 0a2 2 0 110 4 2 2 0 010-4zm-6.5 2.5c-3.5 0-6.5 1.5-7.5 4.5 2.5 1.5 5 2 7.5 2s5-.5 7.5-2c-1-3-4-4.5-7.5-4.5z"/></svg>
     </div>)}
     {bio&&<div style={{position:'absolute',inset:0,zIndex:200,background:C.bg,display:'flex',flexDirection:'column',overflow:'hidden',animation:'slideUp .25s ease'}}>
-      <div className="mhdr"><BackBtn onClick={()=>{setBio(false);setBioPct(0);}}/><div><h3>PawID — Acceso Biométrico</h3><p>Autenticación por plano nasal</p></div></div>
+      <div className="mhdr"><BackBtn onClick={()=>{setBio(false);setBioPct(0);}}/><div><h3>BoopID — Acceso Biométrico</h3><p>Autenticación por plano nasal</p></div></div>
       <div style={{flex:1,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',padding:'20px',gap:14}}>
-        {/* Circle viewfinder — same style as PawID */}
+        {/* Circle viewfinder — same style as BoopID */}
         <div style={{width:56,height:56,borderRadius:16,background:'linear-gradient(135deg,#FF6B6B,#6C3FE8)',display:'flex',alignItems:'center',justifyContent:'center',boxShadow:'0 8px 24px rgba(108,63,232,.4)',marginBottom:6}}>
           <Ico n="nose" s={28} c="#fff"/>
         </div>
@@ -379,14 +398,8 @@ function LoginScreen({onLogin}){
       </div>
     </div>}
     <div style={{textAlign:'center',marginBottom:18,marginTop:4}}>
-      <div style={{width:62,height:62,borderRadius:18,background:C.gA,display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 10px',boxShadow:'0 8px 24px rgba(108,63,232,.4)',animation:'float 3s ease-in-out infinite'}}><Ico n="paw" s={32} c={C.w}/></div>
-      <h1 style={{fontFamily:"'Fredoka One',cursive",fontSize:28,margin:'0 0 3px',color:'#fff'}}>
-  <span style={{color:C.b}}>ID </span>
-  <span style={{color:C.r}}>Paw</span>
-  <span style={{color:C.g}}>ti</span>
-  <span style={{color:'#4A148C'}}>tas</span>
-</h1>
-      <p style={{color:'rgba(255,255,255,.55)',fontSize:11,fontWeight:600}}>Red Social de Mascotas — Honduras</p>
+      <img src="boopid-wordmark.png" alt="BOOPID" style={{width:'72%',maxWidth:240,height:'auto',display:'block',margin:'0 auto 8px',animation:'float 3s ease-in-out infinite',filter:'drop-shadow(0 8px 22px rgba(108,63,232,.45))'}}/>
+      <p style={{fontSize:12,fontWeight:700,margin:0,color:'rgba(255,255,255,.6)'}}>ciudadanos de <span style={{color:C.r}}>4</span> <span style={{color:C.b}}>patitas</span></p>
     </div>
     {mode==='otp'?(<Card style={{padding:'18px 16px',background:'rgba(26,16,60,.85)',border:'1px solid rgba(108,63,232,.35)',backdropFilter:'blur(12px)'}}>
       <div style={{textAlign:'center',marginBottom:14}}>
@@ -413,9 +426,11 @@ function LoginScreen({onLogin}){
       <div style={{display:'flex',alignItems:'center',gap:8,margin:'10px 0 8px'}}><div style={{flex:1,height:1,background:C.bd}}/><span style={{fontSize:10.5,color:'rgba(255,255,255,.35)'}}>o</span><div style={{flex:1,height:1,background:C.bd}}/></div>
       {[['Google','M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z'],['Apple','M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z']].map(([name,path])=><button key={name} onClick={onLogin} style={{width:'100%',display:'flex',alignItems:'center',justifyContent:'center',gap:8,background:'rgba(255,255,255,.08)',border:'1px solid rgba(108,63,232,.3)',borderRadius:12,padding:'9px',cursor:'pointer',fontFamily:"'Quicksand',sans-serif",fontSize:12,fontWeight:700,color:'#fff',marginBottom:6}}><svg width="16" height="16" viewBox="0 0 24 24" fill={name==='Google'?'':'currentColor'}>{name==='Google'?<><path d={path.split(' M')[0]} fill="#4285F4"/><path d={'M'+path.split(' M')[1]} fill="#34A853"/><path d={'M'+path.split(' M')[2]} fill="#FBBC05"/><path d={'M'+path.split(' M')[3]} fill="#EA4335"/></>:<path d={path} fill={C.w}/>}</svg>Continuar con {name}</button>)}
     </Card>)}
+    {/* Cambio 1: botón de login con BoopID Nasal desactivado. El flujo de escaneo biométrico queda como código dormido, listo para revivir.
     <button onClick={()=>setBio(true)} style={{width:'100%',display:'flex',alignItems:'center',justifyContent:'center',gap:8,background:'rgba(0,180,216,.06)',border:`1.5px solid rgba(0,180,216,.28)`,borderRadius:12,padding:'10px',cursor:'pointer',fontFamily:"'Quicksand',sans-serif",fontSize:12.5,fontWeight:700,color:C.b,marginBottom:10}}>
-      <Ico n="nose" s={16} c={C.b}/>Iniciar sesión con PawID Nasal
+      <Ico n="nose" s={16} c={C.b}/>Iniciar sesión con BoopID Nasal
     </button>
+    */}
     <p style={{textAlign:'center',fontSize:10,color:'rgba(255,255,255,.3)'}}>Tegucigalpa, M.D.C. · Honduras · Registro Municipal Oficial</p>
     </div>
   </div>);
@@ -429,13 +444,8 @@ function SplashScreen({onDone}){
   const msgs=['Verificando credenciales...','Cargando perfil...','Sincronizando NRU...','Acceso autorizado.'];
   useEffect(()=>{const ts=[setTimeout(()=>setStep(1),400),setTimeout(()=>setStep(2),900),setTimeout(()=>setStep(3),1400)];let p=0;const iv=setInterval(()=>{p+=3;setPct(p);if(p>=100){clearInterval(iv);setTimeout(onDone,300);}},25);return()=>{ts.forEach(clearTimeout);clearInterval(iv);};},[]);
   return(<div style={{flex:1,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',background:`linear-gradient(170deg,#1A1035,#0A0817)`,padding:32,gap:16}}>
-    <div style={{animation:'float 2.5s ease-in-out infinite'}}><div style={{width:72,height:72,borderRadius:22,background:C.gA,display:'flex',alignItems:'center',justifyContent:'center',boxShadow:'0 12px 36px rgba(108,63,232,.45)'}}><Ico n="paw" s={38} c={C.w}/></div></div>
-    <h1 style={{fontFamily:"'Fredoka One',cursive",fontSize:30,margin:0}}>
-  <span style={{color:C.b}}>ID </span>
-  <span style={{color:C.r}}>Paw</span>
-  <span style={{color:C.g}}>ti</span>
-  <span style={{color:'#4A148C'}}>tas</span>
-</h1>
+    <img src="boopid-wordmark.png" alt="BOOPID" style={{width:'70%',maxWidth:220,height:'auto',animation:'float 2.5s ease-in-out infinite',filter:'drop-shadow(0 12px 30px rgba(108,63,232,.5))'}}/>
+    <p style={{fontSize:12,fontWeight:700,margin:'-4px 0 0',color:'rgba(255,255,255,.6)'}}>ciudadanos de <span style={{color:C.r}}>4</span> <span style={{color:C.b}}>patitas</span></p>
     <div style={{width:'100%',maxWidth:200}}>
       <div style={{height:4,borderRadius:4,background:'rgba(255,255,255,.08)',overflow:'hidden',marginBottom:7}}><div style={{height:'100%',width:pct+'%',background:C.gA,borderRadius:4,transition:'width .08s linear'}}/></div>
       <p style={{textAlign:'center',fontSize:10.5,color:C.m,fontFamily:"'Space Mono',monospace"}}>{msgs[step]}</p>
@@ -448,7 +458,7 @@ function SplashScreen({onDone}){
 // ═════════════════════════════════════════
 function HomeScreen({posts,setPosts,onToast,openPost}){
   const[openCmt,setOpenCmt]=useState(null);const[cmt,setCmt]=useState('');
-  const like=(id)=>{setPosts(p=>p.map(x=>x.id===id?{...x,liked:!x.liked,likes:x.liked?x.likes-1:x.likes+1}:x));onToast('Me gusta · +5 pts');};
+  const like=(id)=>{setPosts(p=>p.map(x=>x.id===id?{...x,liked:!x.liked,likes:x.liked?x.likes-1:x.likes+1}:x));onToast('Boop +5');};
   const addComment=(id)=>{if(!cmt.trim())return;setPosts(p=>p.map(x=>x.id===id?{...x,comments:[...x.comments,{uid:1,t:cmt}]}:x));setCmt('');setOpenCmt(null);onToast('Comentario publicado');};
   return(<div className="scroll">
     <div style={{display:'flex',gap:10,overflowX:'auto',padding:'8px 13px 5px',scrollbarWidth:'none'}}>{Object.values(PETS).map((p,i)=><div key={p.id} style={{display:'flex',flexDirection:'column',alignItems:'center',gap:3,minWidth:50,cursor:'pointer'}}>
@@ -472,13 +482,13 @@ function HomeScreen({posts,setPosts,onToast,openPost}){
       <div style={{margin:'0 12px 9px'}}>
         <Card style={{overflow:'hidden'}}>
           <div style={{display:'flex',alignItems:'center',gap:8,padding:'8px 12px 6px'}}>
-            <Ava src={USERS[p.uid]?.src} ini={USERS[p.uid]?.ini} size={32}/>
-            <div style={{flex:1}}><p style={{margin:0,fontSize:12,fontWeight:700,color:C.tx}}>{USERS[p.uid]?.name}</p><p style={{margin:0,fontSize:9.5,color:C.m}}>con {PETS[p.pid]?.name} · {p.time}</p></div>
+            <div style={{width:34,height:34,borderRadius:'50%',padding:2,background:C.gA,flexShrink:0}}><div style={{width:'100%',height:'100%',borderRadius:'50%',overflow:'hidden',border:`1.5px solid ${C.n2}`}}><Img src={PETS[p.pid]?.img} style={{width:'100%',height:'100%'}}/></div></div>
+            <div style={{flex:1,minWidth:0}}><p style={{margin:0,fontSize:14,fontWeight:700,fontFamily:"'Fredoka One',cursive",color:C.tx,lineHeight:1.15}}>{PETS[p.pid]?.name}</p><div style={{display:'flex',alignItems:'center',gap:5,marginTop:1}}><Ava src={USERS[p.uid]?.src} ini={USERS[p.uid]?.ini} size={16}/><p style={{margin:0,fontSize:10,color:C.m,fontWeight:600}}>{USERS[p.uid]?.name} · {p.time}</p></div></div>
           </div>
           <div style={{width:'100%',aspectRatio:'4/3',overflow:'hidden'}}><Img src={p.img} style={{width:'100%',height:'100%'}}/></div>
           <div style={{padding:'8px 12px 10px'}}>
             <div style={{display:'flex',alignItems:'center',gap:12,marginBottom:6}}>
-              <button onClick={()=>like(p.id)} style={{display:'flex',alignItems:'center',gap:4,background:'none',border:'none',cursor:'pointer',padding:0,fontFamily:"'Quicksand',sans-serif",fontSize:12,fontWeight:700,color:p.liked?C.r:C.m}}><Ico n="heart" s={16} c={p.liked?C.r:C.m} sw={2}/>{p.likes}</button>
+              <button onClick={()=>like(p.id)} style={{display:'flex',alignItems:'center',gap:4,background:'none',border:'none',cursor:'pointer',padding:0,fontFamily:"'Quicksand',sans-serif",fontSize:12,fontWeight:700,color:p.liked?C.r:'#D9739B'}}><BoopIco s={16} on={p.liked}/>{p.likes}</button>
               <button onClick={()=>setOpenCmt(openCmt===p.id?null:p.id)} style={{display:'flex',alignItems:'center',gap:4,background:'none',border:'none',cursor:'pointer',padding:0,fontFamily:"'Quicksand',sans-serif",fontSize:12,fontWeight:600,color:C.m}}><Ico n="chat" s={15} c={C.m}/>{p.comments.length}</button>
               <button onClick={()=>onToast('Enlace copiado')} style={{display:'flex',alignItems:'center',gap:4,background:'none',border:'none',cursor:'pointer',padding:0,color:C.m}}><Ico n="share" s={15} c={C.m}/></button>
               <span style={{marginLeft:'auto',fontSize:9.5,color:'#5B2C8D',fontWeight:700,display:'flex',alignItems:'center',gap:3}}><Ico n="paw" s={10} c={C.g}/>{PETS[p.pid]?.nid?.slice(0,12)}…</span>
@@ -501,14 +511,14 @@ function HomeScreen({posts,setPosts,onToast,openPost}){
 }
 
 // ═════════════════════════════════════════
-// CREATE POST — M05 + PawVision M06
+// CREATE POST — M05 + BoopVision M06
 // ═════════════════════════════════════════
 function PostModal({onClose,onPublish}){
   const[step,setStep]=useState('compose');const[cap,setCap]=useState('');const[pct,setPct]=useState(0);const[vr,setVr]=useState(null);
   const analyze=()=>{setStep('vision');let p=0;const iv=setInterval(()=>{p+=3;setPct(p);if(p>=100){clearInterval(iv);setTimeout(()=>setVr({sp:'Perro (Canis lupus familiaris)',br:'Terrier Mestizo',conf:96,edad:'2-4 años',cond:'Excelente',col:'Blanco con manchas negras'}),400);}},40);};
   const publish=()=>{setStep('pub');setTimeout(()=>setStep('done'),2000);};
   return(<div className="modal">
-    <div className="mhdr"><BackBtn onClick={onClose}/><div><h3>Crear Publicación</h3><p>M05 · PawVision + PawGuard</p></div></div>
+    <div className="mhdr"><BackBtn onClick={onClose}/><div><h3>Crear Publicación</h3><p>M05 · BoopVision + BoopGuard</p></div></div>
     <div className="scroll" style={{padding:'12px 14px'}}>
     {step==='compose'&&<div style={{animation:'fadeIn .3s ease'}}>
       <div style={{width:'100%',aspectRatio:'4/3',borderRadius:14,overflow:'hidden',position:'relative',marginBottom:12,cursor:'pointer'}} onClick={analyze}>
@@ -521,32 +531,36 @@ function PostModal({onClose,onPublish}){
         <button onClick={analyze} style={{flex:1,padding:'7px',borderRadius:9,border:`1px solid ${C.bd}`,background:'rgba(255,255,255,.05)',cursor:'pointer',fontFamily:"'Quicksand',sans-serif",fontSize:11,fontWeight:700,color:C.m,display:'flex',alignItems:'center',justifyContent:'center',gap:4}}><Ico n="camera" s={13} c={C.m}/>Cámara</button>
         <button onClick={analyze} style={{flex:1,padding:'7px',borderRadius:9,border:`1px solid ${C.bd}`,background:'rgba(255,255,255,.05)',cursor:'pointer',fontFamily:"'Quicksand',sans-serif",fontSize:11,fontWeight:700,color:C.m,display:'flex',alignItems:'center',justifyContent:'center',gap:4}}><Ico n="image" s={13} c={C.m}/>Galería</button>
       </div>
-      <textarea value={cap} onChange={e=>setCap(e.target.value)} placeholder="Escribe algo... #IDPawtitas" rows={3} style={{width:'100%',background:'rgba(255,255,255,.06)',border:`1.5px solid ${C.bd}`,borderRadius:10,padding:'9px 12px',color:C.w,fontSize:12.5,fontFamily:"'Quicksand',sans-serif",fontWeight:500,outline:'none',resize:'none',lineHeight:1.5,marginBottom:10}}/>
-      <Btn full label="Analizar con PawVision" ic="brain" bg={C.gA} co={C.w} onClick={analyze}/>
+      <div style={{display:'flex',gap:7,alignItems:'flex-start',padding:'8px 11px',borderRadius:10,background:'rgba(249,200,70,.08)',border:'1px solid rgba(249,200,70,.25)',marginBottom:10}}>
+        <div style={{flexShrink:0,marginTop:1}}><Ico n="shield" s={13} c="#B8860B"/></div>
+        <p style={{margin:0,fontSize:10,color:C.tx,lineHeight:1.45,fontWeight:500}}>Si tu foto o video incluye música, sos responsable de contar con los derechos. El contenido con música protegida puede retirarse a solicitud del titular.</p>
+      </div>
+      <textarea value={cap} onChange={e=>setCap(e.target.value)} placeholder="Escribe algo... #BOOPID" rows={3} style={{width:'100%',background:'rgba(255,255,255,.06)',border:`1.5px solid ${C.bd}`,borderRadius:10,padding:'9px 12px',color:C.tx,fontSize:12.5,fontFamily:"'Quicksand',sans-serif",fontWeight:500,outline:'none',resize:'none',lineHeight:1.5,marginBottom:10}}/>
+      <Btn full label="Analizar con BoopVision" ic="brain" bg={C.gA} co={C.w} onClick={analyze}/>
     </div>}
     {step==='vision'&&!vr&&<div style={{textAlign:'center',padding:'24px 0',animation:'fadeIn .3s ease'}}>
       <div style={{width:60,height:60,borderRadius:18,background:'rgba(108,63,232,.1)',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 12px'}}><Ico n="brain" s={30} c={C.a}/></div>
-      <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:18,color:C.tx,margin:'0 0 11px'}}>PawVision analizando</h3>
+      <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:18,color:C.tx,margin:'0 0 11px'}}>BoopVision analizando</h3>
       <div style={{width:180,margin:'0 auto 10px'}}><div style={{height:4,borderRadius:4,background:'rgba(255,255,255,.08)',overflow:'hidden',marginBottom:5}}><div style={{height:'100%',width:pct+'%',background:C.gA,borderRadius:4,transition:'width .08s'}}/></div></div>
-      {['MobileNetV3 — especie y raza','EfficientNetV2 — condición corporal','YOLOv8 — accesorios','PawGuard — moderación'].map((s,i)=><p key={i} style={{margin:'2px 0',fontSize:10,color:pct>i*25?C.b:C.m2,fontWeight:pct>i*25?700:400,fontFamily:"'Space Mono',monospace"}}>[{pct>i*25?'OK':'  '}] {s}</p>)}
+      {['MobileNetV3 — especie y raza','EfficientNetV2 — condición corporal','YOLOv8 — accesorios','BoopGuard — moderación'].map((s,i)=><p key={i} style={{margin:'2px 0',fontSize:10,color:pct>i*25?C.b:C.m2,fontWeight:pct>i*25?700:400,fontFamily:"'Space Mono',monospace"}}>[{pct>i*25?'OK':'  '}] {s}</p>)}
       <Legal/>
     </div>}
     {step==='vision'&&vr&&<div style={{animation:'pop .35s ease'}}>
       <Card style={{padding:'12px',marginBottom:10,border:'1px solid rgba(0,180,216,.2)'}}>
-        <div style={{display:'flex',alignItems:'center',gap:7,marginBottom:9}}><Ico n="brain" s={16} c={C.b}/><div><p style={{margin:0,fontSize:12,fontWeight:700,color:C.tx}}>Resultado PawVision</p><p style={{margin:0,fontSize:9.5,color:C.m}}>Datos IA — editables por el dueño</p></div><span style={{marginLeft:'auto',fontSize:13,fontWeight:800,color:C.gr}}>{vr.conf}%</span></div>
+        <div style={{display:'flex',alignItems:'center',gap:7,marginBottom:9}}><Ico n="brain" s={16} c={C.b}/><div><p style={{margin:0,fontSize:12,fontWeight:700,color:C.tx}}>Resultado BoopVision</p><p style={{margin:0,fontSize:9.5,color:C.m}}>Datos IA — editables por el dueño</p></div><span style={{marginLeft:'auto',fontSize:13,fontWeight:800,color:C.gr}}>{vr.conf}%</span></div>
         {[['Especie',vr.sp,true],['Raza',vr.br,true],['Edad estimada',vr.edad,false],['Condición',vr.cond,false],['Color',vr.col,true]].map(([k,v,ia])=><div key={k} style={{display:'flex',justifyContent:'space-between',paddingBottom:5,marginBottom:5,borderBottom:`1px solid ${C.bd}`}}>
           <div><span style={{fontSize:9,color:C.m,fontWeight:700,display:'block'}}>{k}</span><span style={{fontSize:11.5,color:C.tx,fontWeight:600}}>{v}</span></div>
           {ia&&<span style={{fontSize:8,fontWeight:700,color:C.b,background:'rgba(0,180,216,.1)',padding:'2px 6px',borderRadius:6,marginTop:1}}>IA · editable</span>}
         </div>)}
         <Legal text="Datos generados por IA. La corrección manual del dueño tiene prioridad absoluta."/>
       </Card>
-      <Card style={{padding:'9px 12px',marginBottom:10,border:'1px solid rgba(34,197,94,.18)'}}><div style={{display:'flex',gap:7,alignItems:'center'}}><Ico n="shield" s={14} c={C.gr}/><p style={{margin:0,fontSize:11.5,fontWeight:700,color:C.gr}}>PawGuard — Contenido aprobado</p></div></Card>
+      <Card style={{padding:'9px 12px',marginBottom:10,border:'1px solid rgba(34,197,94,.18)'}}><div style={{display:'flex',gap:7,alignItems:'center'}}><Ico n="shield" s={14} c={C.gr}/><p style={{margin:0,fontSize:11.5,fontWeight:700,color:C.gr}}>BoopGuard — Contenido aprobado</p></div></Card>
       <div style={{display:'flex',gap:7}}><Btn label="Editar" ic="edit" bg="rgba(255,255,255,.07)" co={C.m} style={{flex:1,border:`1px solid ${C.bd}`}}/><Btn label="Publicar" ic="send" bg={C.gA} co={C.w} style={{flex:2}} onClick={publish}/></div>
     </div>}
-    {step==='pub'&&<div style={{textAlign:'center',padding:'28px 0'}}><div style={{width:32,height:32,border:`3px solid rgba(255,255,255,.1)`,borderTop:`3px solid ${C.b}`,borderRadius:'50%',animation:'spin .8s linear infinite',margin:'0 auto 14px'}}/><h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:17,color:C.w,margin:'0 0 8px'}}>Publicando...</h3>{['Sharp — optimizando imagen','R2 — almacenando','PawGuard — revisión final'].map(s=><p key={s} style={{margin:'2px 0',fontSize:10,color:C.m,fontFamily:"'Space Mono',monospace"}}>· {s}</p>)}</div>}
+    {step==='pub'&&<div style={{textAlign:'center',padding:'28px 0'}}><div style={{width:32,height:32,border:`3px solid rgba(255,255,255,.1)`,borderTop:`3px solid ${C.b}`,borderRadius:'50%',animation:'spin .8s linear infinite',margin:'0 auto 14px'}}/><h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:17,color:C.tx,margin:'0 0 8px'}}>Publicando...</h3>{['Sharp — optimizando imagen','R2 — almacenando','BoopGuard — revisión final'].map(s=><p key={s} style={{margin:'2px 0',fontSize:10,color:C.m,fontFamily:"'Space Mono',monospace"}}>· {s}</p>)}</div>}
     {step==='done'&&<div style={{textAlign:'center',padding:'20px 0',animation:'pop .4s cubic-bezier(.34,1.56,.64,1)'}}>
       <div style={{width:56,height:56,borderRadius:17,background:'rgba(34,197,94,.1)',border:'2px solid #22C55E',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 11px'}}><Ico n="check" s={26} c={C.gr}/></div>
-      <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:20,color:C.w,margin:'0 0 4px'}}>Publicado!</h3>
+      <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:20,color:C.tx,margin:'0 0 4px'}}>Publicado!</h3>
       <p style={{color:C.m,fontSize:12,margin:'0 0 16px'}}>Tu publicación ya está en el feed.</p>
       <Btn full label="Ver en el feed" ic="home" bg={C.gA} co={C.w} onClick={()=>{onPublish&&onPublish();onClose();}}/>
     </div>}
@@ -559,6 +573,8 @@ function PostModal({onClose,onPublish}){
 // ═════════════════════════════════════════
 function PawIDModal({onClose}){
   const[mode,setMode]=useState('menu');const[pct,setPct]=useState(0);const pet=PETS[1];
+  const[used,setUsed]=useState(1);const LIMIT=2;const[ef,setEf]=useState({motivo:'',lugar:'',contacto:''});
+  const escan=()=>{setMode('eproc');let p=0;const iv=setInterval(()=>{p+=2;setPct(p);if(p>=100){clearInterval(iv);setTimeout(()=>{setUsed(u=>Math.min(u+1,LIMIT));setMode('eresult');},400);}},35);};
   const scan=()=>{setMode('proc');let p=0;const iv=setInterval(()=>{p+=2;setPct(p);if(p>=100){clearInterval(iv);setTimeout(()=>setMode('result'),400);}},35);};
   const verify=()=>{setMode('vproc');let p=0;const iv=setInterval(()=>{p+=2;setPct(p);if(p>=100){clearInterval(iv);setTimeout(()=>setMode('vresult'),400);}},35);};
   const vf=(<div style={{display:'flex',flexDirection:'column',alignItems:'center',gap:10,paddingTop:8}}>
@@ -576,16 +592,23 @@ function PawIDModal({onClose}){
     </div>
     <p style={{margin:0,fontSize:13,fontWeight:700,color:C.a,display:'flex',alignItems:'center',gap:6}}><Ico n="camera" s={14} c={C.a}/>Acercar nariz aquí</p>
   </div>);;
-  const ring=(pct)=>(<div style={{width:80,height:80,margin:'0 auto 12px',position:'relative'}}><svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="33" fill="none" stroke="rgba(108,63,232,.12)" strokeWidth="7"/><circle cx="40" cy="40" r="33" fill="none" stroke="url(#rg)" strokeWidth="7" strokeLinecap="round" strokeDasharray="207" strokeDashoffset={207-(207*pct/100)} style={{transform:'rotate(-90deg)',transformOrigin:'40px 40px',transition:'stroke-dashoffset .1s'}}/><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#6C3FE8"/><stop offset="1" stopColor="#00B4D8"/></linearGradient></defs></svg><div style={{position:'absolute',inset:0,display:'flex',alignItems:'center',justifyContent:'center'}}><span style={{fontFamily:"'Fredoka One',cursive",fontSize:19,color:C.w}}>{pct}%</span></div></div>);
+  const ring=(pct)=>(<div style={{width:80,height:80,margin:'0 auto 12px',position:'relative'}}><svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="33" fill="none" stroke="rgba(108,63,232,.12)" strokeWidth="7"/><circle cx="40" cy="40" r="33" fill="none" stroke="url(#rg)" strokeWidth="7" strokeLinecap="round" strokeDasharray="207" strokeDashoffset={207-(207*pct/100)} style={{transform:'rotate(-90deg)',transformOrigin:'40px 40px',transition:'stroke-dashoffset .1s'}}/><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#6C3FE8"/><stop offset="1" stopColor="#00B4D8"/></linearGradient></defs></svg><div style={{position:'absolute',inset:0,display:'flex',alignItems:'center',justifyContent:'center'}}><span style={{fontFamily:"'Fredoka One',cursive",fontSize:19,color:C.tx}}>{pct}%</span></div></div>);
   return(<div className="modal">
-    <div className="mhdr"><BackBtn onClick={onClose}/><div><h3><span style={{color:C.r}}>Paw</span><span style={{color:C.b}}>ID</span><span style={{color:'rgba(255,255,255,.6)'}}> — Biometría Nasal</span></h3><p>M03 · NRU SYSTEM v2.4.1</p></div><div style={{display:'flex',alignItems:'center',gap:4}}><div style={{width:6,height:6,borderRadius:'50%',background:C.gr,animation:'pulse 1.5s ease-in-out infinite'}}/><span style={{fontSize:9,fontWeight:700,color:C.gr,fontFamily:"'Space Mono',monospace"}}>ACTIVO</span></div></div>
+    <div className="mhdr"><BackBtn onClick={onClose}/><div><h3><span style={{color:C.r}}>Boop</span><span style={{color:C.b}}>ID</span><span style={{color:'rgba(255,255,255,.6)'}}> — Biometría Nasal</span></h3><p>M03 · NRU SYSTEM v2.4.1</p></div><div style={{display:'flex',alignItems:'center',gap:4}}><div style={{width:6,height:6,borderRadius:'50%',background:C.gr,animation:'pulse 1.5s ease-in-out infinite'}}/><span style={{fontSize:9,fontWeight:700,color:C.gr,fontFamily:"'Space Mono',monospace"}}>ACTIVO</span></div></div>
     <div className="scroll" style={{padding:'12px 14px'}}>
     {mode==='menu'&&<div style={{animation:'fadeIn .3s ease'}}>
       <div style={{display:'flex',gap:8,marginBottom:13}}>{[{m:'consent',l:'Nuevo Registro',ic:'camera'},{m:'verify',l:'Verificar',ic:'shield'}].map(opt=><Card key={opt.m} onClick={()=>setMode(opt.m)} style={{flex:1,padding:'12px 8px',textAlign:'center',cursor:'pointer'}}>
         <div style={{width:36,height:36,borderRadius:10,background:'rgba(0,180,216,.1)',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 6px'}}><Ico n={opt.ic} s={18} c={C.b}/></div>
         <p style={{margin:0,fontSize:12,fontWeight:700,color:C.tx}}>{opt.l}</p>
       </Card>)}</div>
-      <Card style={{padding:'11px 13px'}}><p style={{margin:'0 0 7px',fontSize:11,fontWeight:700,color:'#5B2C8D'}}>Pipeline PawID</p>
+      <Card onClick={()=>setMode('econsult')} style={{padding:'12px 13px',marginBottom:13,cursor:'pointer',border:'1.5px solid rgba(229,57,53,.22)',background:'linear-gradient(135deg,rgba(229,57,53,.06),rgba(108,63,232,.05))'}}>
+        <div style={{display:'flex',gap:9,alignItems:'center'}}>
+          <div style={{width:36,height:36,borderRadius:10,background:'rgba(229,57,53,.12)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}><Ico n="search" s={18} c="#E53935"/></div>
+          <div style={{flex:1}}><p style={{margin:0,fontSize:12.5,fontWeight:700,color:C.tx}}>Consulta de emergencia</p><p style={{margin:0,fontSize:10.5,color:C.m}}>Escaneá la nariz de una mascota encontrada para hallar a su dueño</p></div>
+          <span style={{fontSize:9,fontWeight:800,color:used>=LIMIT?C.r:C.gr,background:used>=LIMIT?'rgba(229,57,53,.1)':'rgba(34,197,94,.1)',padding:'3px 7px',borderRadius:7,flexShrink:0}}>{LIMIT-used}/{LIMIT}</span>
+        </div>
+      </Card>
+      <Card style={{padding:'11px 13px'}}><p style={{margin:'0 0 7px',fontSize:11,fontWeight:700,color:'#5B2C8D'}}>Pipeline BoopID</p>
         {[['1','Captura OpenCV — 15–30 cm'],['2','CNN MobileNetV3 — Embedding 128D'],['3','SHA-3 256 bits — Hash NRU'],['4','Similitud coseno ≥ 0.93']].map(([n,d])=><div key={n} style={{display:'flex',gap:8,marginBottom:5,alignItems:'center'}}>
           <div style={{width:17,height:17,borderRadius:'50%',background:C.gA,display:'flex',alignItems:'center',justifyContent:'center',fontSize:8.5,color:C.tx,fontWeight:800,flexShrink:0}}>{n}</div>
           <span style={{fontSize:11.5,color:C.m}}>{d}</span>
@@ -596,7 +619,7 @@ function PawIDModal({onClose}){
       <Card style={{padding:'13px',border:'1.5px solid rgba(0,180,216,.22)',marginBottom:12}}>
         <div style={{display:'flex',gap:8,alignItems:'center',marginBottom:10}}><div style={{width:36,height:36,borderRadius:10,background:'rgba(0,180,216,.1)',display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="shield" s={18} c={C.b}/></div><div><p style={{margin:0,fontSize:12.5,fontWeight:700,color:C.tx}}>Consentimiento informado</p><p style={{margin:0,fontSize:10,color:C.m}}>Requerido antes de capturar</p></div></div>
         {['Capturar imagen biométrica del plano nasal','Generar NRU permanente vinculado al propietario','Almacenar cifrado con AES-256','Compartir con Alcaldía Municipal para registro'].map(t=><div key={t} style={{display:'flex',gap:6,marginBottom:6}}><Ico n="check" s={12} c={C.b}/><span style={{fontSize:11.5,color:C.m}}>{t}</span></div>)}
-        <p style={{margin:'8px 0 0',fontSize:10.5,color:C.m2,fontStyle:'italic'}}>Voluntario y revocable. PawID no es diagnóstico veterinario.</p>
+        <p style={{margin:'8px 0 0',fontSize:10.5,color:C.m2,fontStyle:'italic'}}>Voluntario y revocable. BoopID no es diagnóstico veterinario.</p>
       </Card>
       <div style={{display:'flex',gap:7}}><Btn label="Cancelar" bg="rgba(255,255,255,.06)" co={C.m} onClick={()=>setMode('menu')} style={{flex:1,border:`1px solid ${C.bd}`}}/><Btn label="Acepto — Continuar" ic="arrow" bg={C.gB} co={C.w} onClick={()=>setMode('capture')} style={{flex:2}}/></div>
     </div>}
@@ -604,27 +627,61 @@ function PawIDModal({onClose}){
       <p style={{textAlign:'center',fontSize:11,color:C.m,marginTop:8,fontWeight:600}}>Mantenga estable · Distancia 15–30 cm</p></div>}
     {(mode==='proc'||mode==='vproc')&&<div style={{textAlign:'center',padding:'18px 0'}}>
       {ring(pct)}
-      <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:17,color:C.w,margin:'0 0 11px'}}>Procesando Biometría</h3>
+      <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:17,color:C.tx,margin:'0 0 11px'}}>Procesando Biometría</h3>
       {[['Preprocesamiento OpenCV',0],['Extracción MobileNetV3',25],['Generando embedding 128D',50],['Hash SHA-3 → NRU',75]].map(([s,thr])=><p key={s} style={{margin:'2px 0',fontSize:10,color:pct>thr?C.a:C.m2,fontWeight:pct>thr?700:400,fontFamily:"'Space Mono',monospace"}}>[{pct>thr?'OK':'  '}] {s}</p>)}
     </div>}
     {mode==='result'&&<div style={{animation:'pop .4s cubic-bezier(.34,1.56,.64,1)'}}>
       <div style={{textAlign:'center',marginBottom:13}}><div style={{width:52,height:52,borderRadius:15,background:'rgba(34,197,94,.1)',border:'2px solid #22C55E',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 8px'}}><Ico n="check" s={24} c={C.gr}/></div><h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:18,color:C.tx,margin:'0 0 2px'}}>NRU Generado</h3><p style={{color:C.m,fontSize:11}}>Similitud coseno: 0.97 · Tiempo: 1.2s</p></div>
       <Card style={{padding:'12px',marginBottom:11,border:'1px solid rgba(249,200,70,.2)'}}>
-        <div style={{display:'flex',gap:9,marginBottom:10}}><div style={{width:48,height:48,borderRadius:12,overflow:'hidden',border:`2px solid ${C.g}`}}><Img src={pet.img} style={{width:48,height:48}}/></div><div style={{flex:1}}><p style={{margin:'0 0 1px',fontSize:9,color:'#5B2C8D',fontWeight:700,textTransform:'uppercase'}}>Identidad registrada</p><h3 style={{margin:'1px 0',fontFamily:"'Fredoka One',cursive",fontSize:16,color:C.w}}>{pet.name}</h3><p style={{margin:0,fontSize:10.5,color:C.m}}>{pet.br} · {USERS[pet.ow].name}</p></div></div>
+        <div style={{display:'flex',gap:9,marginBottom:10}}><div style={{width:48,height:48,borderRadius:12,overflow:'hidden',border:`2px solid ${C.g}`}}><Img src={pet.img} style={{width:48,height:48}}/></div><div style={{flex:1}}><p style={{margin:'0 0 1px',fontSize:9,color:'#5B2C8D',fontWeight:700,textTransform:'uppercase'}}>Identidad registrada</p><h3 style={{margin:'1px 0',fontFamily:"'Fredoka One',cursive",fontSize:16,color:C.tx}}>{pet.name}</h3><p style={{margin:0,fontSize:10.5,color:C.m}}>{pet.br} · {USERS[pet.ow].name}</p></div></div>
         <div style={{background:C.n3,borderRadius:9,padding:'9px 11px'}}>
           <p style={{margin:'0 0 2px',fontSize:8.5,color:C.m,fontWeight:700,textTransform:'uppercase',letterSpacing:.5}}>Número de Registro Único</p>
           <p style={{margin:'0 0 6px',fontFamily:"'Space Mono',monospace",fontSize:14,fontWeight:700,color:C.b,letterSpacing:.7}}>{pet.nid}</p>
           <div style={{display:'flex',justifyContent:'center'}}><div style={{width:68,height:68,background:C.w,borderRadius:8,padding:6,display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="qr" s={52} c={C.n1} sw={1}/></div></div>
-          <p style={{textAlign:'center',margin:'5px 0 0',fontSize:8.5,color:C.m2,fontFamily:"'Space Mono',monospace"}}>idpawtitas.com/verificar/{pet.nid}</p>
+          <p style={{textAlign:'center',margin:'5px 0 0',fontSize:8.5,color:C.m2,fontFamily:"'Space Mono',monospace"}}>boopid.com/verificar/{pet.nid}</p>
         </div>
       </Card>
       <Btn full label="Ver Carnet Digital" ic="qr" bg={C.gA} co={C.w} onClick={onClose}/>
     </div>}
     {mode==='vresult'&&<div style={{textAlign:'center',padding:'16px 0',animation:'pop .4s cubic-bezier(.34,1.56,.64,1)'}}>
       <div style={{width:62,height:62,borderRadius:19,background:'rgba(34,197,94,.1)',border:'2px solid #22C55E',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 10px'}}><Ico n="check" s={29} c={C.gr}/></div>
-      <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:20,color:C.w,margin:'0 0 3px'}}>Identidad Confirmada</h3>
+      <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:20,color:C.tx,margin:'0 0 3px'}}>Identidad Confirmada</h3>
       <p style={{color:C.m,fontSize:12,margin:'0 0 12px'}}>Coincidencia: <strong style={{color:C.gr}}>97.3%</strong> · Umbral ≥93% · 1.1s</p>
       <Btn full label="Cerrar" bg={C.gA} co={C.w} onClick={onClose}/>
+    </div>}
+    {mode==='econsult'&&<div style={{animation:'fadeIn .3s ease'}}>
+      <Card style={{padding:'11px 13px',marginBottom:11,border:'1.5px solid rgba(229,57,53,.2)'}}>
+        <div style={{display:'flex',gap:8,alignItems:'center',marginBottom:7}}><div style={{width:34,height:34,borderRadius:10,background:'rgba(229,57,53,.1)',display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="search" s={17} c="#E53935"/></div><div style={{flex:1}}><p style={{margin:0,fontSize:12.5,fontWeight:700,color:C.tx}}>Consulta de emergencia</p><p style={{margin:0,fontSize:10,color:C.m}}>Te quedan <strong style={{color:used>=LIMIT?C.r:C.gr}}>{LIMIT-used} de {LIMIT}</strong> este mes</p></div></div>
+        <p style={{margin:0,fontSize:10.5,color:C.m,lineHeight:1.5}}>Solo para casos reales (una mascota perdida o encontrada). Completá el formulario para continuar.</p>
+      </Card>
+      <div style={{display:'flex',flexDirection:'column',gap:9,marginBottom:11}}>
+        {[['Motivo','motivo','Ej: encontré una mascota perdida'],['¿Dónde la encontraste?','lugar','Colonia o punto de referencia'],['Tu contacto','contacto','Teléfono o correo']].map(([lb,k,ph])=><div key={k}><label style={{fontSize:9.5,fontWeight:700,color:C.m,textTransform:'uppercase',letterSpacing:.4,display:'block',marginBottom:3}}>{lb}</label><input value={ef[k]} onChange={e=>setEf({...ef,[k]:e.target.value})} placeholder={ph} className="inp" style={{padding:'9px 11px',fontSize:12}}/></div>)}
+      </div>
+      <div style={{padding:'8px 11px',borderRadius:10,background:'rgba(108,63,232,.06)',border:`1px solid ${C.bd}`,marginBottom:11,display:'flex',gap:7,alignItems:'center'}}><Ico n="shield" s={14} c={C.a}/><p style={{margin:0,fontSize:10,color:C.m,lineHeight:1.45}}><strong style={{color:C.a}}>Patrulla Canina Municipal:</strong> escaneos ilimitados en su cuenta institucional (facturados a la Alcaldía).</p></div>
+      <div style={{display:'flex',gap:7}}>
+        <Btn label="Cancelar" bg="rgba(255,255,255,.06)" co={C.m} onClick={()=>setMode('menu')} style={{flex:1,border:`1px solid ${C.bd}`}}/>
+        {used>=LIMIT
+          ?<Btn label="Límite mensual alcanzado" bg="rgba(229,57,53,.1)" co={C.r} style={{flex:2}}/>
+          :<Btn label="Escanear ahora" ic="nose" bg={C.gB} co={C.w} onClick={()=>{if(ef.motivo&&ef.contacto)setMode('ecapture');}} style={{flex:2,opacity:(ef.motivo&&ef.contacto)?1:.5}}/>}
+      </div>
+      {used<LIMIT&&(!ef.motivo||!ef.contacto)&&<p style={{textAlign:'center',fontSize:10,color:C.m2,marginTop:7}}>Completá motivo y contacto para habilitar el escaneo</p>}
+    </div>}
+    {mode==='ecapture'&&<div style={{animation:'fadeIn .3s ease'}}>{vf}<Btn full label="Escanear Huella Nasal" ic="nose" bg="linear-gradient(135deg,#FF6B6B,#6C3FE8)" co={C.w} onClick={escan} style={{padding:'15px',fontSize:15,fontFamily:"'Fredoka One',cursive",letterSpacing:.3,boxShadow:'0 8px 28px rgba(108,63,232,.35)',borderRadius:18}}/><p style={{textAlign:'center',fontSize:11,color:C.m,marginTop:8,fontWeight:600}}>Mantenga estable · Distancia 15–30 cm</p></div>}
+    {mode==='eproc'&&<div style={{textAlign:'center',padding:'18px 0'}}>{ring(pct)}<h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:17,color:C.tx,margin:'0 0 11px'}}>Buscando coincidencia</h3>{[['Preprocesamiento OpenCV',0],['Extracción MobileNetV3',25],['Comparando con la base',50],['Similitud coseno ≥ 0.93',75]].map(([s,thr])=><p key={s} style={{margin:'2px 0',fontSize:10,color:pct>thr?C.a:C.m2,fontWeight:pct>thr?700:400,fontFamily:"'Space Mono',monospace"}}>[{pct>thr?'OK':'  '}] {s}</p>)}</div>}
+    {mode==='eresult'&&<div style={{animation:'pop .4s cubic-bezier(.34,1.56,.64,1)'}}>
+      <div style={{textAlign:'center',marginBottom:12}}><div style={{width:52,height:52,borderRadius:15,background:'rgba(34,197,94,.1)',border:'2px solid #22C55E',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 8px'}}><Ico n="check" s={24} c={C.gr}/></div><h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:18,color:C.tx,margin:'0 0 2px'}}>Mascota identificada</h3><p style={{color:C.m,fontSize:11}}>Coincidencia: 96.4% · Umbral ≥93%</p></div>
+      <Card style={{padding:'12px',marginBottom:11,border:'1px solid rgba(34,197,94,.2)'}}>
+        <div style={{display:'flex',gap:9,marginBottom:10}}><div style={{width:48,height:48,borderRadius:12,overflow:'hidden',border:`2px solid ${C.gr}`}}><Img src={pet.img} style={{width:48,height:48}}/></div><div style={{flex:1}}><h3 style={{margin:'1px 0',fontFamily:"'Fredoka One',cursive",fontSize:16,color:C.tx}}>{pet.name}</h3><p style={{margin:0,fontSize:10.5,color:C.m}}>{pet.br} · {pet.nid}</p></div></div>
+        <div style={{background:C.n3,borderRadius:9,padding:'9px 11px'}}>
+          <p style={{margin:'0 0 2px',fontSize:8.5,color:C.m,fontWeight:700,textTransform:'uppercase',letterSpacing:.5}}>Dueño registrado</p>
+          <p style={{margin:'0 0 5px',fontSize:13,fontWeight:700,color:C.tx}}>{USERS[pet.ow].name}</p>
+          <p style={{margin:0,fontSize:11,color:C.m}}>Contacto: +504 9XXX-XXXX ·{USERS[pet.ow].bio.split('|')[1]||' Tegucigalpa'}</p>
+        </div>
+      </Card>
+      <div style={{display:'flex',gap:7}}>
+        <Btn label="Cerrar" bg="rgba(255,255,255,.06)" co={C.m} onClick={onClose} style={{flex:1,border:`1px solid ${C.bd}`}}/>
+        <Btn label="Avisar al dueño" ic="bell" bg={C.gB} co={C.w} onClick={onClose} style={{flex:2}}/>
+      </div>
     </div>}
     </div>
   </div>);
@@ -642,7 +699,7 @@ function CarnetModal({onClose}){
       <div style={{display:'flex',gap:0,borderRadius:10,overflow:'hidden',border:`1px solid ${C.bd}`,marginBottom:12}}>{[{k:'basico',l:'Modo Básico'},{k:'extraviada',l:'Modo Extraviada'}].map(m=><button key={m.k} onClick={()=>setModo(m.k)} style={{flex:1,padding:'7px',border:'none',cursor:'pointer',fontFamily:"'Quicksand',sans-serif",fontSize:11.5,fontWeight:700,background:modo===m.k?(m.k==='basico'?'#4A148C':'#B71C1C'):'transparent',color:modo===m.k?C.w:C.m,transition:'.2s'}}>{m.l}</button>)}</div>
       <div style={{borderRadius:15,overflow:'hidden',border:`2px solid ${mC}`,marginBottom:12,boxShadow:`0 8px 28px ${mC}33`}}>
         <div style={{background:mC,padding:isL?'12px 14px':'10px 14px'}}>
-          <p style={{margin:0,textAlign:'center',fontFamily:"'Fredoka One',cursive",fontSize:15,color:'#FFFFFF',letterSpacing:.5,textShadow:'0 1px 4px rgba(0,0,0,.3)'}}>ID PAWTITAS</p>
+          <p style={{margin:0,textAlign:'center',fontFamily:"'Fredoka One',cursive",fontSize:15,color:'#FFFFFF',letterSpacing:.5,textShadow:'0 1px 4px rgba(0,0,0,.3)'}}>BOOPID</p>
           {isL?<><p style={{margin:'1px 0 4px',textAlign:'center',fontSize:9,color:'rgba(255,255,255,.8)'}}>ALERTA DE MASCOTA PERDIDA</p><p style={{margin:0,textAlign:'center',fontFamily:"'Fredoka One',cursive",fontSize:15,color:'#FFCDD2'}}>AYÚDAME A ENCONTRAR A MI MASCOTA</p></>:<p style={{margin:'1px 0 0',textAlign:'center',fontSize:9.5,color:'rgba(255,255,255,.95)',fontWeight:600}}>Carnet de Identificación Digital · República de Honduras</p>}
         </div>
         <div style={{background:isL?'#FFF5F5':'#F8F6FF',padding:'11px'}}>
@@ -662,9 +719,9 @@ function CarnetModal({onClose}){
             {!isL?<div style={{display:'flex',gap:4,flexWrap:'wrap'}}>{pet.vac.slice(0,4).map(v=><span key={v} style={{fontSize:8,fontWeight:700,color:'#0D5C2E',background:'#C8F7D9',padding:'2px 6px',borderRadius:5}}>{v}</span>)}<span style={{fontSize:7.5,color:'#888',marginLeft:'auto'}}>Reg: {pet.reg}</span></div>:
             <div style={{display:'flex',gap:6}}>{[['REG.',pet.reg],['COD.EMERG.','EP-2024-7823']].map(([k,v])=><div key={k}><p style={{margin:0,fontSize:7.5,color:'#7B68A0',fontWeight:700}}>{k}</p><p style={{margin:0,fontSize:10,color:'#1A0A2E',fontWeight:700}}>{v}</p></div>)}</div>}
           </div>
-          {isL&&<div style={{background:'#B71C1C',borderRadius:8,padding:'6px',textAlign:'center',marginTop:6}}><p style={{margin:0,fontSize:10,fontWeight:700,color:C.tx}}>Toca "YO LA VI" en la app · idpawtitas.com</p></div>}
+          {isL&&<div style={{background:'#B71C1C',borderRadius:8,padding:'6px',textAlign:'center',marginTop:6}}><p style={{margin:0,fontSize:10,fontWeight:700,color:C.tx}}>Toca "YO LA VI" en la app · boopid.com</p></div>}
         </div>
-        <div style={{background:mC,padding:'5px',textAlign:'center'}}><p style={{margin:0,fontSize:7.5,color:'rgba(255,255,255,.95)',fontFamily:"'Space Mono',monospace",fontWeight:700}}>ID PAWTITAS · Registro Municipal · idpawtitas.com/verificar/{pet.nid}</p></div>
+        <div style={{background:mC,padding:'5px',textAlign:'center'}}><p style={{margin:0,fontSize:7.5,color:'rgba(255,255,255,.95)',fontFamily:"'Space Mono',monospace",fontWeight:700}}>BOOPID · Registro Municipal · boopid.com/verificar/{pet.nid}</p></div>
       </div>
       <div style={{display:'flex',gap:7,marginBottom:isL?8:0}}><Btn label="PDF A4" ic="share" bg="rgba(255,255,255,.07)" co={C.m} style={{flex:1,border:`1px solid ${C.bd}`,fontSize:11}}/><Btn label="PNG" ic="image" bg="rgba(255,255,255,.07)" co={C.m} style={{flex:1,border:`1px solid ${C.bd}`,fontSize:11}}/><Btn label="Compartir" ic="share" bg={mC} co={C.w} style={{flex:1,fontSize:11}}/></div>
       {isL&&<Btn full label="YO LA VI — Reportar Avistamiento" ic="pin" bg="linear-gradient(135deg,#B71C1C,#E53935)" co={C.w} style={{marginTop:0}}/>}
@@ -698,7 +755,7 @@ function MatchScreen({onToast,openChat}){
       <button onClick={()=>setMatched(null)} style={{position:'absolute',top:14,right:14,width:36,height:36,borderRadius:'50%',background:'rgba(255,255,255,.12)',border:'1px solid rgba(255,255,255,.2)',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer'}}><Ico n="x" s={16} c="#fff"/></button>
       <div style={{width:66,height:66,borderRadius:20,background:C.gA,display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="paw" s={34} c={C.w}/></div>
       <h2 style={{fontFamily:"'Fredoka One',cursive",fontSize:24,margin:0}}>
-  <span style={{color:C.r}}>Paw</span><span style={{color:C.g}}>Match</span><span style={{color:C.g}}>!</span>
+  <span style={{color:C.r}}>Boop</span><span style={{color:C.g}}>Match</span><span style={{color:C.g}}>!</span>
 </h2>
       <p style={{color:'rgba(255,255,255,.7)',fontSize:12,textAlign:'center',maxWidth:180,fontWeight:600}}>Pimpy y {PETS[matched.pid]?.name} se han conectado. El chat está disponible.</p>
       <div style={{display:'flex',gap:7,alignItems:'center'}}>
@@ -709,6 +766,10 @@ function MatchScreen({onToast,openChat}){
       <div style={{display:'flex',gap:8}}>
         <Btn label="Abrir Chat" ic="chat" bg={C.gA} co={C.w} onClick={()=>{setMatched(null);openChat();}}/>
         <Btn label="Seguir viendo" ic="arrow" bg="rgba(255,255,255,.12)" co="#fff" onClick={()=>setMatched(null)} style={{border:'1px solid rgba(255,255,255,.2)'}}/>
+      </div>
+      <div style={{maxWidth:280,margin:'2px 6px 0',padding:'9px 12px',borderRadius:11,background:'rgba(255,255,255,.06)',border:'1px solid rgba(255,255,255,.14)',display:'flex',gap:8,alignItems:'flex-start'}}>
+        <div style={{flexShrink:0,marginTop:1}}><Ico n="shield" s={14} c={C.g}/></div>
+        <p style={{margin:0,fontSize:10,lineHeight:1.5,color:'rgba(255,255,255,.72)',fontWeight:600}}>No promovemos el cruce de mascotas con fines de comercialización, y consideramos el cruce irresponsable como una forma de maltrato animal.</p>
       </div>
     </div>}
     <div className="scroll" style={{padding:'10px 12px'}}>
@@ -789,7 +850,7 @@ function MatchScreen({onToast,openChat}){
 
 
 // ═════════════════════════════════════════
-// EXPLORE — Ranking + Perdidas + PawMood + PawSuggest + Mercado
+// EXPLORE — Ranking + Perdidas + BoopMood + BoopSuggest + Mercado
 // ═════════════════════════════════════════
 function ExploreScreen({onToast}){
   const[sub,setSub]=useState('ranking');
@@ -799,7 +860,7 @@ function ExploreScreen({onToast}){
   const analyzeMood=()=>{setMStep('analyzing');let p=0;const iv=setInterval(()=>{p+=3;setMPct(p);if(p>=100){clearInterval(iv);setTimeout(()=>{setMResult({l:'Alegre / Activo',d:'Cola activa, postura abierta y energía positiva.',c:'#22C55E',conf:94});setMStep('result');},400);}},40);};
   const vote=(id)=>{if(voted[id])return;setVoted(v=>({...v,[id]:true}));onToast('Voto registrado · 1/día/mascota');};
   const joinChal=(id)=>{setChals(cs=>cs.map(x=>x.id===id?{...x,joined:true}:x));onToast('Te uniste al reto!');};
-  const TABS=[{k:'ranking',l:'Ranking',ic:'trophy'},{k:'perdidas',l:'Perdidas',ic:'pin'},{k:'mood',l:'PawMood IA',ic:'brain'},{k:'suggest',l:'Recomend.',ic:'star'},{k:'market',l:'Mercado',ic:'tag'}];
+  const TABS=[{k:'ranking',l:'Ranking',ic:'trophy'},{k:'perdidas',l:'Perdidas',ic:'pin'},{k:'mood',l:'BoopMood IA',ic:'brain'},{k:'suggest',l:'Recomend.',ic:'star'},{k:'market',l:'Mercado',ic:'tag'}];
   return(<div style={{flex:1,display:'flex',flexDirection:'column',overflow:'hidden'}}>
     <div style={{display:'grid',gridTemplateColumns:'repeat(5,1fr)',gap:3,padding:'6px 11px 0',flexShrink:0}}>
       {TABS.map(t=><button key={t.k} onClick={()=>setSub(t.k)} style={{display:'flex',alignItems:'center',justifyContent:'center',gap:2,padding:'5px 2px',borderRadius:9,border:'none',cursor:'pointer',background:sub===t.k?C.gA:'rgba(30,100,200,.08)',color:sub===t.k?C.w:C.m,fontSize:9,fontWeight:700,fontFamily:"'Quicksand',sans-serif",flexDirection:'column',transition:'.2s'}}>
@@ -878,7 +939,7 @@ function ExploreScreen({onToast}){
       </Card>}
     </div>}
     {sub==='mood'&&<div style={{animation:'fadeIn .3s ease'}}>
-      <Card style={{padding:'12px',marginBottom:11}}><div style={{display:'flex',gap:8,alignItems:'center',marginBottom:8}}><div style={{width:32,height:32,borderRadius:9,background:'rgba(108,63,232,.12)',display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="brain" s={16} c={C.a}/></div><div><p style={{margin:0,fontSize:12,fontWeight:700,color:C.tx}}>IA PawMood</p><p style={{margin:0,fontSize:10,color:C.m}}>Análisis emocional aparente por imagen</p></div></div><Legal/></Card>
+      <Card style={{padding:'12px',marginBottom:11}}><div style={{display:'flex',gap:8,alignItems:'center',marginBottom:8}}><div style={{width:32,height:32,borderRadius:9,background:'rgba(108,63,232,.12)',display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="brain" s={16} c={C.a}/></div><div><p style={{margin:0,fontSize:12,fontWeight:700,color:C.tx}}>IA BoopMood</p><p style={{margin:0,fontSize:10,color:C.m}}>Análisis emocional aparente por imagen</p></div></div><Legal/></Card>
       {mStep==='select'&&<div>
         <div style={{width:'100%',aspectRatio:'1.5',background:C.n3,borderRadius:15,border:`2px dashed ${C.bd}`,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:8,marginBottom:12,cursor:'pointer'}} onClick={analyzeMood}>
           <Ico n="camera" s={22} c={C.a}/><p style={{margin:0,fontSize:12,fontWeight:700,color:C.m}}>Cargar foto de Pimpy</p>
@@ -887,7 +948,7 @@ function ExploreScreen({onToast}){
       </div>}
       {mStep==='analyzing'&&<div style={{textAlign:'center',padding:'20px 0'}}>
         <div style={{width:60,height:60,borderRadius:18,background:'rgba(108,63,232,.1)',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 12px'}}><Ico n="brain" s={28} c={C.a}/></div>
-        <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:17,color:C.w,margin:'0 0 11px'}}>Analizando...</h3>
+        <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:17,color:C.tx,margin:'0 0 11px'}}>Analizando...</h3>
         {[['MediaPipe — puntos anatómicos',0],['TensorFlow — postura corporal',25],['MobileNetV3 — expresión facial',50],['Modelo emocional — estado',75]].map(([s,thr])=><p key={s} style={{margin:'2px 0',fontSize:10,color:mPct>thr?C.b:C.m2,fontWeight:mPct>thr?700:400,fontFamily:"'Space Mono',monospace"}}>[{mPct>thr?'OK':'  '}] {s}</p>)}
       </div>}
       {mStep==='result'&&mResult&&<div style={{animation:'pop .4s cubic-bezier(.34,1.56,.64,1)'}}>
@@ -904,7 +965,7 @@ function ExploreScreen({onToast}){
       </div>}
     </div>}
     {sub==='suggest'&&<div style={{animation:'fadeIn .3s ease'}}>
-      <Card style={{padding:'10px',marginBottom:10,border:'1px solid rgba(249,200,70,.18)'}}><p style={{margin:'0 0 3px',fontSize:11,fontWeight:700,color:'#5B2C8D'}}>PawSuggest — Personalizado</p><p style={{margin:0,fontSize:10.5,color:C.m2}}>Solo usa datos internos de la plataforma. Sin rastreo externo.</p></Card>
+      <Card style={{padding:'10px',marginBottom:10,border:'1px solid rgba(249,200,70,.18)'}}><p style={{margin:'0 0 3px',fontSize:11,fontWeight:700,color:'#5B2C8D'}}>BoopSuggest — Personalizado</p><p style={{margin:0,fontSize:10.5,color:C.m2}}>Solo usa datos internos de la plataforma. Sin rastreo externo.</p></Card>
       {[{t:'vet',n:'Veterinaria El Arca del Norte',d:'0.8 km · Col. Kennedy',ic:'shield',c:C.gr},{t:'match',n:'Laika podría ser compatible',d:'1.2 km · 92% compatibilidad',ic:'heart',c:C.r},{t:'record',n:'Vacuna de Rabia — Pimpy',d:'Vence el 15 enero 2025. Reserva cita.',ic:'bell',c:C.g},{t:'match',n:'Naranjita podría ser compatible',d:'1.5 km · 88% compatibilidad',ic:'heart',c:C.r},{t:'vet',n:'Clínica Vet. San Francisco',d:'1.4 km · Especialista dermatología',ic:'shield',c:C.gr}].map((sg,i)=><Card key={i} style={{padding:'10px',marginBottom:7}}>
         <div style={{display:'flex',gap:8,alignItems:'center'}}>
           <div style={{width:33,height:33,borderRadius:9,background:`${sg.c}12`,display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}><Ico n={sg.ic} s={16} c={sg.c}/></div>
@@ -961,7 +1022,7 @@ function ChatModal({onClose}){
         <div><h3>Carlos Mejía · Laika</h3><p style={{color:C.gr,fontSize:10}}>· En línea</p></div>
       </div>
     </div>
-    <div style={{background:'rgba(108,63,232,.06)',padding:'5px 14px',borderBottom:`1px solid ${C.bd}`,flexShrink:0}}><p style={{margin:0,fontSize:9.5,color:C.m,textAlign:'center',fontStyle:'italic'}}>Chat desbloqueado tras PawMatch mutuo · Phoenix Channels + WebSocket</p></div>
+    <div style={{background:'rgba(108,63,232,.06)',padding:'5px 14px',borderBottom:`1px solid ${C.bd}`,flexShrink:0}}><p style={{margin:0,fontSize:9.5,color:C.m,textAlign:'center',fontStyle:'italic'}}>Chat desbloqueado tras BoopMatch mutuo · Phoenix Channels + WebSocket</p></div>
     <div ref={scrollRef} style={{flex:1,overflowY:'auto',padding:'11px 12px',display:'flex',flexDirection:'column',gap:8}}>
       {msgs.map((msg,i)=>{const isMe=msg.from===1;return(<div key={i} style={{display:'flex',flexDirection:isMe?'row-reverse':'row',gap:6,alignItems:'flex-end'}}>
         {!isMe&&<Ava src={U.carl} ini="CM" size={22}/>}
@@ -974,7 +1035,7 @@ function ChatModal({onClose}){
     </div>
     <div style={{padding:'8px 12px 10px',borderTop:`1px solid ${C.bd}`,flexShrink:0}}>
       <div style={{display:'flex',gap:6,alignItems:'center',background:'rgba(255,255,255,.06)',borderRadius:19,border:`1px solid ${C.bd}`,padding:'5px 6px 5px 13px'}}>
-        <input value={inp} onChange={e=>setInp(e.target.value)} placeholder="Escribe un mensaje..." style={{flex:1,background:'none',border:'none',color:C.w,fontSize:12.5,fontFamily:"'Quicksand',sans-serif",outline:'none'}} onKeyDown={e=>e.key==='Enter'&&send()}/>
+        <input value={inp} onChange={e=>setInp(e.target.value)} placeholder="Escribe un mensaje..." style={{flex:1,background:'none',border:'none',color:C.tx,fontSize:12.5,fontFamily:"'Quicksand',sans-serif",outline:'none'}} onKeyDown={e=>e.key==='Enter'&&send()}/>
         <button onClick={send} style={{width:30,height:30,borderRadius:'50%',background:C.gA,border:'none',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',flexShrink:0}}><Ico n="send" s={13} c={C.w}/></button>
       </div>
       <div style={{display:'flex',gap:5,marginTop:6}}>{['Proponer encuentro','Parque La Paz','Sábado 8am'].map(sg=><button key={sg} onClick={()=>setInp(sg)} style={{fontSize:9.5,fontWeight:700,padding:'3px 7px',borderRadius:7,border:`1px solid ${C.bd}`,background:'transparent',color:C.m,cursor:'pointer',fontFamily:"'Quicksand',sans-serif"}}>{sg}</button>)}</div>
@@ -1026,7 +1087,7 @@ function WalkModal({onClose,onToast}){
     </div>}
     {st==='done'&&<div style={{textAlign:'center',animation:'pop .4s cubic-bezier(.34,1.56,.64,1)'}}>
       <div style={{width:56,height:56,borderRadius:17,background:'rgba(34,197,94,.1)',border:'2px solid #22C55E',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 11px'}}><Ico n="check" s={26} c={C.gr}/></div>
-      <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:20,color:C.w,margin:'0 0 3px'}}>Paseo completado!</h3>
+      <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:20,color:C.tx,margin:'0 0 3px'}}>Paseo completado!</h3>
       <div style={{display:'flex',gap:6,justifyContent:'center',margin:'12px 0'}}>
         {[['Distancia',`${dist.toFixed(2)} km`,C.b],['Duración',fmt(secs),C.g],['Puntos',`+${Math.floor(dist*20)}`,C.r]].map(([l,v,c])=><Card key={l} style={{padding:'8px 12px',textAlign:'center'}}><p style={{margin:0,fontSize:15,fontWeight:800,color:c,fontFamily:"'Fredoka One',cursive"}}>{v}</p><p style={{margin:0,fontSize:9,color:C.m}}>{l}</p></Card>)}
       </div>
@@ -1048,8 +1109,8 @@ function NotifModal({onClose,notifs,setNotifs}){
     <div className="mhdr"><BackBtn onClick={onClose}/><div><h3>Notificaciones</h3><p>M11 · FCM + APNs · 7 tipos</p></div><button onClick={()=>setNotifs(n=>n.map(x=>({...x,read:true})))} style={{background:'none',border:'none',cursor:'pointer',fontSize:11,color:C.b,fontWeight:700,fontFamily:"'Quicksand',sans-serif"}}>Todo leído</button></div>
     <div className="scroll">
       {notifs.map(n=><div key={n.id} onClick={()=>setNotifs(ns=>ns.map(x=>x.id===n.id?{...x,read:true}:x))} style={{display:'flex',gap:10,padding:'12px 14px',borderBottom:`1px solid ${C.bd}`,cursor:'pointer',background:n.read?'transparent':'rgba(108,63,232,.06)'}}>
-        <div style={{width:32,height:32,borderRadius:9,background:`${COLORS[n.type]||C.a}14`,display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}><Ico n={n.ic} s={16} c={COLORS[n.type]||C.a}/></div>
-        <div style={{flex:1}}><p style={{margin:'0 0 1px',fontSize:12.5,fontWeight:n.read?500:700,color:n.read?C.m:C.w,lineHeight:1.4}}>{n.msg}</p><p style={{margin:0,fontSize:10,color:C.m2}}>{n.time}</p></div>
+        <div style={{width:32,height:32,borderRadius:9,background:`${COLORS[n.type]||C.a}14`,display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}>{n.type==='like'?<BoopIco s={16} on={true}/>:<Ico n={n.ic} s={16} c={COLORS[n.type]||C.a}/>}</div>
+        <div style={{flex:1}}><p style={{margin:'0 0 1px',fontSize:12.5,fontWeight:n.read?500:700,color:n.read?C.m:C.tx,lineHeight:1.4}}>{n.msg}</p><p style={{margin:0,fontSize:10,color:C.m2}}>{n.time}</p></div>
         {!n.read&&<div style={{width:7,height:7,borderRadius:'50%',background:C.a,flexShrink:0,marginTop:4}}/>}
       </div>)}
     </div>
@@ -1059,7 +1120,7 @@ function NotifModal({onClose,notifs,setNotifs}){
 // ═════════════════════════════════════════
 // DENUNCIA — DOC09
 // ═════════════════════════════════════════
-function DenunciaModal({onClose}){
+function DenunciaModal({onClose,onToast}){
   const[step,setStep]=useState(1);const[nivel,setNivel]=useState(null);const[desc,setDesc]=useState('');
   const[caseNum]=useState('CASO-'+Math.floor(Math.random()*9000+1000));
   const NV=[
@@ -1071,9 +1132,9 @@ function DenunciaModal({onClose}){
   const selN=NV.find(x=>x.n===nivel);
   const STEPS=['Nivel','Descripción','Evidencia','Ubicación','Enviar'];
   return(<div className="modal">
-    <div className="mhdr"><BackBtn onClick={onClose}/><div><h3>Denuncia Ciudadana</h3><p>M15 · Paso {step}/5 · PawGuard activo</p></div><div style={{width:30,height:30,borderRadius:8,background:'rgba(183,28,28,.1)',display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="shield" s={14} c='#EF5350'/></div></div>
+    <div className="mhdr"><BackBtn onClick={onClose}/><div><h3>Denuncia Ciudadana</h3><p>M15 · Paso {step}/5 · BoopGuard activo</p></div><div style={{width:30,height:30,borderRadius:8,background:'rgba(183,28,28,.1)',display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="shield" s={14} c='#EF5350'/></div></div>
     <div style={{padding:'6px 13px',borderBottom:`1px solid ${C.bd}`,flexShrink:0}}>
-      <div style={{display:'flex',gap:3}}>{STEPS.map((s,i)=><div key={s} style={{flex:1,textAlign:'center'}}><div style={{height:3,borderRadius:3,background:i+1<=step?'#EF5350':'rgba(30,120,200,.12)',marginBottom:2,transition:'.3s'}}/><span style={{fontSize:7.5,color:i+1===step?C.w:C.m2,fontWeight:i+1===step?700:400}}>{s}</span></div>)}</div>
+      <div style={{display:'flex',gap:3}}>{STEPS.map((s,i)=><div key={s} style={{flex:1,textAlign:'center'}}><div style={{height:3,borderRadius:3,background:i+1<=step?'#EF5350':'rgba(30,120,200,.12)',marginBottom:2,transition:'.3s'}}/><span style={{fontSize:7.5,color:i+1===step?C.a:C.m2,fontWeight:i+1===step?700:400}}>{s}</span></div>)}</div>
     </div>
     <div className="scroll" style={{padding:'12px 13px'}}>
     {step===1&&<div style={{animation:'fadeIn .3s ease'}}>
@@ -1092,14 +1153,14 @@ function DenunciaModal({onClose}){
     {step===2&&<div style={{animation:'fadeIn .3s ease'}}>
       {selN&&<div style={{padding:'5px 10px',borderRadius:8,background:selN.bg,border:`1px solid ${selN.col}33`,marginBottom:10,display:'flex',gap:7,alignItems:'center'}}><span style={{fontSize:9,fontWeight:800,color:selN.col}}>NIVEL {selN.n} — {selN.cat}</span><span style={{fontSize:9,color:C.m2,marginLeft:'auto'}}>{selN.time}</span></div>}
       <p style={{margin:'0 0 9px',fontSize:12.5,fontWeight:700,color:C.tx}}>Describe la situación</p>
-      <textarea value={desc} onChange={e=>setDesc(e.target.value)} placeholder="Ej: Perro mediano atado a una reja sin agua, muy delgado, con heridas visibles..." rows={5} style={{width:'100%',background:'rgba(255,255,255,.06)',border:`1.5px solid ${C.bd}`,borderRadius:10,padding:'9px 12px',color:C.w,fontSize:12.5,fontFamily:"'Quicksand',sans-serif",fontWeight:500,outline:'none',resize:'none',lineHeight:1.5,marginBottom:4}}/>
+      <textarea value={desc} onChange={e=>setDesc(e.target.value)} placeholder="Ej: Perro mediano atado a una reja sin agua, muy delgado, con heridas visibles..." rows={5} style={{width:'100%',background:'rgba(255,255,255,.06)',border:`1.5px solid ${C.bd}`,borderRadius:10,padding:'9px 12px',color:C.tx,fontSize:12.5,fontFamily:"'Quicksand',sans-serif",fontWeight:500,outline:'none',resize:'none',lineHeight:1.5,marginBottom:4}}/>
       <span style={{fontSize:10,color:desc.length<50?C.r:C.m,display:'block',marginBottom:10}}>{desc.length}/1000{desc.length<50?' — mínimo 50 caracteres':''}</span>
     </div>}
     {step===3&&<div style={{animation:'fadeIn .3s ease'}}>
       <p style={{margin:'0 0 3px',fontSize:12.5,fontWeight:700,color:C.tx}}>Adjunta evidencia</p>
       <p style={{margin:'0 0 10px',fontSize:11,color:C.m}}>Mínimo 1 foto obligatoria. Máximo 5 fotos o 1 video de 60s.</p>
       <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',gap:7,marginBottom:12}}>{[0,1,2,3,4].map(i=><div key={i} style={{aspectRatio:'1',borderRadius:10,border:`2px dashed ${i===0?C.b:C.bd}`,background:'rgba(255,255,255,.03)',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:3,cursor:'pointer'}}><Ico n="camera" s={i===0?19:15} c={i===0?C.b:C.m2}/><span style={{fontSize:8,color:i===0?C.b:C.m2,fontWeight:700}}>{i===0?'REQUERIDA':'OPCIONAL'}</span></div>)}</div>
-      <Card style={{padding:'10px 12px',border:'1px solid rgba(108,63,232,.18)'}}><div style={{display:'flex',gap:8,alignItems:'center',marginBottom:7}}><Ico n="brain" s={15} c={C.a}/><div><p style={{margin:0,fontSize:12,fontWeight:700,color:C.tx}}>PawGuard — TensorFlow + OpenCV</p><p style={{margin:0,fontSize:9.5,color:C.m}}>Verificación automática al enviar</p></div></div>{['Confirma presencia de animal','Detecta indicadores de maltrato','Descarta imágenes duplicadas'].map(t=><div key={t} style={{display:'flex',gap:6,marginBottom:4}}><Ico n="check" s={11} c={C.a}/><span style={{fontSize:11,color:C.m}}>{t}</span></div>)}</Card>
+      <Card style={{padding:'10px 12px',border:'1px solid rgba(108,63,232,.18)'}}><div style={{display:'flex',gap:8,alignItems:'center',marginBottom:7}}><Ico n="brain" s={15} c={C.a}/><div><p style={{margin:0,fontSize:12,fontWeight:700,color:C.tx}}>BoopGuard — TensorFlow + OpenCV</p><p style={{margin:0,fontSize:9.5,color:C.m}}>Verificación automática al enviar</p></div></div>{['Confirma presencia de animal','Detecta indicadores de maltrato','Descarta imágenes duplicadas'].map(t=><div key={t} style={{display:'flex',gap:6,marginBottom:4}}><Ico n="check" s={11} c={C.a}/><span style={{fontSize:11,color:C.m}}>{t}</span></div>)}</Card>
     </div>}
     {step===4&&<div style={{animation:'fadeIn .3s ease'}}>
       <p style={{margin:'0 0 3px',fontSize:12.5,fontWeight:700,color:C.tx}}>Ubicación del incidente</p>
@@ -1114,8 +1175,17 @@ function DenunciaModal({onClose}){
     </div>}
     {step===5&&selN&&<div style={{textAlign:'center',padding:'10px 0',animation:'pop .4s cubic-bezier(.34,1.56,.64,1)'}}>
       <div style={{width:58,height:58,borderRadius:17,background:'rgba(34,197,94,.1)',border:'2px solid #22C55E',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 11px'}}><Ico n="check" s={27} c={C.gr}/></div>
-      <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:20,color:C.w,margin:'0 0 4px'}}>Denuncia enviada</h3>
-      <p style={{color:C.m,fontSize:12,margin:'0 0 14px'}}>PawGuard verificando imágenes</p>
+      <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:20,color:C.tx,margin:'0 0 4px'}}>Denuncia enviada</h3>
+      <p style={{color:C.m,fontSize:12,margin:'0 0 14px'}}>BoopGuard verificando imágenes</p>
+      <div style={{marginBottom:12}}>
+        <p style={{margin:'0 0 7px',fontSize:10,fontWeight:800,color:C.m,textTransform:'uppercase',letterSpacing:.5,textAlign:'left'}}>Contactos de emergencia</p>
+        <div style={{display:'flex',flexWrap:'wrap',gap:7}}>
+          {[['911','phone','#E53935'],['Bomberos','flame','#F57C00'],['Municipalidad','building','#6C3FE8'],['Rescatistas','paw','#059669']].map(([lbl,ic,col])=><button key={lbl} onClick={()=>onToast&&onToast('Contactando: '+lbl)} style={{flex:'1 1 calc(50% - 4px)',display:'flex',flexDirection:'column',alignItems:'center',gap:5,padding:'11px 4px',borderRadius:12,background:col+'12',border:`1px solid ${col}33`,cursor:'pointer',fontFamily:"'Quicksand',sans-serif"}}>
+            <div style={{width:34,height:34,borderRadius:10,background:col+'1F',display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n={ic} s={18} c={col}/></div>
+            <span style={{fontSize:10.5,fontWeight:700,color:col}}>{lbl}</span>
+          </button>)}
+        </div>
+      </div>
       <Card style={{padding:'12px',textAlign:'left',marginBottom:10,border:`1px solid ${selN.col}33`}}>
         <div style={{display:'flex',gap:8,alignItems:'center',marginBottom:8}}><div style={{flex:1}}><p style={{margin:0,fontSize:9.5,color:C.m,fontWeight:700,textTransform:'uppercase',letterSpacing:.5}}>Número de caso</p><p style={{margin:0,fontFamily:"'Space Mono',monospace",fontSize:14,fontWeight:700,color:C.b}}>{caseNum}</p></div><span style={{fontSize:9,fontWeight:800,color:selN.col,background:selN.bg,padding:'3px 8px',borderRadius:7}}>NIVEL {selN.n}</span></div>
         <div style={{display:'flex',gap:5,marginBottom:8}}><span style={{fontSize:9.5,fontWeight:700,color:C.gr,background:'rgba(34,197,94,.1)',padding:'3px 8px',borderRadius:7}}>IA: Verificando</span><span style={{fontSize:9.5,color:C.m,background:'rgba(255,255,255,.06)',padding:'3px 8px',borderRadius:7}}>Moderador asignado</span></div>
@@ -1147,13 +1217,13 @@ function ProfileScreen({openPawID,openCarnet,openWalk,openDenuncia,openRegistro,
         {[['Nombre',user.name],['Biografía',user.bio]].map(([l,v])=><div key={l} style={{marginBottom:8}}><label style={{fontSize:9.5,fontWeight:700,color:C.m,textTransform:'uppercase',letterSpacing:.4,display:'block',marginBottom:3}}>{l}</label><input defaultValue={v} className="inp" style={{padding:'8px 11px',fontSize:12}}/></div>)}
         <div style={{display:'flex',gap:6}}><Btn label="Cancelar" bg="rgba(255,255,255,.06)" co={C.m} onClick={()=>setEditMode(false)} style={{flex:1,border:`1px solid ${C.bd}`}}/><Btn label="Guardar" ic="check" bg={C.gA} co={C.w} onClick={()=>setEditMode(false)} style={{flex:1}}/></div>
       </Card>}
-      {!editMode&&<><h2 style={{margin:'0 0 2px',fontFamily:"'Fredoka One',cursive",fontSize:19,color:C.w}}>{user.name}</h2><p style={{margin:'0 0 7px',fontSize:11,color:C.m,fontWeight:600}}>{user.bio}</p><div style={{display:'flex',gap:14,marginBottom:12}}>{[{v:user.fol,l:'Seguidores'},{v:47,l:'Posts'},{v:user.pts,l:'Puntos'},{v:'#'+user.rank,l:'Ranking'}].map(({v,l})=><div key={l} style={{textAlign:'center'}}><p style={{margin:0,fontSize:14,fontWeight:800,color:C.tx,fontFamily:"'Fredoka One',cursive"}}>{v.toLocaleString()}</p><p style={{margin:0,fontSize:9,color:C.m,fontWeight:600}}>{l}</p></div>)}</div></>}
+      {!editMode&&<><h2 style={{margin:'0 0 2px',fontFamily:"'Fredoka One',cursive",fontSize:19,color:C.tx}}>{user.name}</h2><p style={{margin:'0 0 7px',fontSize:11,color:C.m,fontWeight:600}}>{user.bio}</p><div style={{display:'flex',gap:14,marginBottom:12}}>{[{v:user.fol,l:'Seguidores'},{v:47,l:'Posts'},{v:user.pts,l:'Puntos'},{v:'#'+user.rank,l:'Ranking'}].map(({v,l})=><div key={l} style={{textAlign:'center'}}><p style={{margin:0,fontSize:14,fontWeight:800,color:C.tx,fontFamily:"'Fredoka One',cursive"}}>{v.toLocaleString()}</p><p style={{margin:0,fontSize:9,color:C.m,fontWeight:600}}>{l}</p></div>)}</div></>}
       <p style={{margin:'0 0 7px',fontSize:10,fontWeight:700,color:C.m,textTransform:'uppercase',letterSpacing:.5}}>Mi mascota</p>
       <Card style={{padding:'12px',marginBottom:11}}>
         <div style={{display:'flex',gap:10,marginBottom:10}}>
           <div style={{width:50,height:50,borderRadius:13,overflow:'hidden',border:`2px solid rgba(249,200,70,.4)`}}><Img src={pet.img} style={{width:50,height:50}}/></div>
           <div style={{flex:1}}>
-            <h3 style={{margin:'0 0 2px',fontFamily:"'Fredoka One',cursive",fontSize:16,color:C.w}}>{pet.name}</h3>
+            <h3 style={{margin:'0 0 2px',fontFamily:"'Fredoka One',cursive",fontSize:16,color:C.tx}}>{pet.name}</h3>
             <p style={{margin:'0 0 4px',fontSize:10.5,color:C.m}}>{pet.br} · {pet.age} · {pet.w}</p>
             <div style={{display:'flex',gap:4,flexWrap:'wrap'}}>{pet.vac.slice(0,3).map(v=><span key={v} style={{fontSize:8,fontWeight:700,color:C.gr,background:'rgba(34,197,94,.08)',padding:'1px 5px',borderRadius:4}}>{v}</span>)}{pet.neu&&<span style={{fontSize:8,fontWeight:700,color:C.b,background:'rgba(0,180,216,.08)',padding:'1px 5px',borderRadius:4}}>Esterilizado</span>}</div>
           </div>
@@ -1163,7 +1233,7 @@ function ProfileScreen({openPawID,openCarnet,openWalk,openDenuncia,openRegistro,
           <p style={{margin:'0 0 5px',fontFamily:"'Space Mono',monospace",fontSize:12.5,fontWeight:700,color:C.tx,letterSpacing:.6}}>{pet.nid}</p>
           <div style={{display:'flex',gap:4,flexWrap:'wrap'}}>{[['Estado','Registrada'],['Municipio','MDC'],['Fecha',pet.reg]].map(([k,v])=><div key={k} style={{background:'rgba(255,255,255,.04)',borderRadius:6,padding:'2px 6px'}}><p style={{margin:0,fontSize:7,color:C.m2,fontWeight:700,textTransform:'uppercase'}}>{k}</p><p style={{margin:0,fontSize:10,color:C.tx,fontWeight:700}}>{v}</p></div>)}</div>
         </div>
-        <div style={{display:'flex',gap:6}}><Btn label="Ver Carnet" ic="qr" bg="rgba(255,255,255,.07)" co={C.m} onClick={openCarnet} style={{flex:1,border:`1px solid ${C.bd}`,fontSize:11}}/><Btn label="PawID" ic="nose" bg="rgba(0,180,216,.08)" co={C.b} onClick={openPawID} style={{flex:1,border:'1px solid rgba(0,180,216,.22)',fontSize:11}}/></div>
+        <div style={{display:'flex',gap:6}}><Btn label="Ver Carnet" ic="qr" bg="rgba(255,255,255,.07)" co={C.m} onClick={openCarnet} style={{flex:1,border:`1px solid ${C.bd}`,fontSize:11}}/><Btn label="BoopID" ic="nose" bg="rgba(0,180,216,.08)" co={C.b} onClick={openPawID} style={{flex:1,border:'1px solid rgba(0,180,216,.22)',fontSize:11}}/></div>
       </Card>
       <button style={{width:'100%',padding:'9px',borderRadius:12,border:`2px dashed ${C.bd}`,background:'transparent',cursor:'pointer',fontFamily:"'Quicksand',sans-serif",fontSize:12,fontWeight:700,color:C.m,display:'flex',alignItems:'center',justifyContent:'center',gap:6,marginBottom:11}}>
         <Ico n="plus" s={15} c={C.m}/>Agregar otra mascota
@@ -1186,114 +1256,67 @@ function ProfileScreen({openPawID,openCarnet,openWalk,openDenuncia,openRegistro,
 // PLANES DE SUSCRIPCION — M13
 // ═════════════════════════════════════════
 function PlanesModal({onClose}){
-  const[sel,setSel]=useState('estandar');
-  const CORE=['Biometría nasal PawID','Geolocalización para extraviados','Carnet digital con QR y NRU','Insignia Donante del Mes','Muro de Héroes Peludos'];
+  const[open,setOpen]=useState(null);
+  const CORE=['Biometría nasal BoopID','Geolocalización para extraviados','Carnet digital con QR y NRU','Insignia Donante del Mes','Muro de Héroes Peludos'];
   const PLANES=[
     {k:'basico',  n:'Básico', p:'Gratis',     sub:'para siempre', col:'#64748B',g:'linear-gradient(135deg,#64748B,#94A3B8)',
-     feats:['PawFeed básico — publicaciones en la comunidad','Carnet de vacunación digital','Mapa de servicios veterinarios limitado'],
+     feats:['BoopFeed básico — publicaciones en la comunidad','Carnet de vacunación digital','Mapa de servicios veterinarios limitado'],
      ideal:'Nuevos usuarios que desean registrar su mascota sin compromiso de pago.'},
     {k:'estandar',n:'Estándar',p:'$1.99',     sub:'/mes',         col:'#0891B2',g:'linear-gradient(135deg,#0891B2,#06B6D4)',
-     feats:['PawFeed completo — sin restricciones de contenido','Historial médico digital','Vacunas con recordatorios y OCR de documentos','PawMatch — mascotas compatibles en tu zona','Descuentos en veterinarias, pet shops y clínicas','Plan regalo: 2 meses Premium en adopción en refugio'],
+     feats:['BoopFeed completo — sin restricciones de contenido','Historial médico digital','Vacunas con recordatorios y OCR de documentos','BoopMatch — mascotas compatibles en tu zona','Descuentos en veterinarias, pet shops y clínicas'],
      ideal:'Propietarios activos que participan en la comunidad y quieren acceso completo.'},
     {k:'premium', n:'Premium', p:'$5.99',     sub:'/mes por mascota',col:'#7C3AED',g:'linear-gradient(135deg,#7C3AED,#9333EA)',
-     feats:['Análisis de fotos y videos con IA','Modo extraviado — biometría de emergencia en 1 toque','Descuentos exclusivos en comercios afiliados','Descuento X% en seguro médico para mascotas','Plan Familiar disponible: hasta 5 mascotas a $7.99 c/u'],
+     feats:['Análisis de fotos y videos con IA','Modo extraviado — biometría de emergencia en 1 toque','Descuentos exclusivos en veterinarias, pet shops y comercios afiliados','Descuento X% en seguro médico para mascotas','Plan Familiar disponible: hasta 5 mascotas a $7.99 c/u'],
      ideal:'Dueños que desean lo mejor en seguridad, identificación y tecnología IA.'},
     {k:'platinum',n:'Platinum',p:'$9.99',     sub:'/mes por mascota',col:'#B45309',g:'linear-gradient(135deg,#B45309,#D97706)',
-     feats:['IA emocional en tiempo real — 7 estados detectables','Reporte mensual de salud IA con alertas','Teleconsulta veterinaria incluida — profesional certificado','Soporte técnico prioritario — respuesta en <24h','Insignia azul verificada en el perfil','Descuento X% en seguro médico — mayor que Premium'],
+     feats:['IA emocional en tiempo real — 7 estados detectables','Reporte mensual de salud IA con alertas','Teleconsulta veterinaria incluida — profesional certificado','Soporte técnico prioritario — respuesta en <24h','Insignia azul verificada en el perfil','Descuentos en veterinarias, pet shops y comercios afiliados','Descuento X% en seguro médico — mayor que Premium'],
      ideal:'El propietario que exige lo mejor: salud, bienestar emocional y máxima cobertura.'},
     {k:'familiar',n:'Familiar', p:'$7.99',    sub:'/mes por mascota · hasta 5',col:'#059669',g:'linear-gradient(135deg,#059669,#10B981)',
-     feats:['Un solo perfil — hasta 5 mascotas con cobertura Platinum completa','IA emocional para todas las mascotas del hogar','Reporte mensual de salud IA por cada mascota','Teleconsulta veterinaria para cualquier mascota del plan','Descuentos exclusivos para toda la familia','Un solo cobro mensual — facturación unificada'],
+     feats:['Un solo perfil — hasta 5 mascotas con cobertura Platinum completa','IA emocional para todas las mascotas del hogar','Reporte mensual de salud IA por cada mascota','Teleconsulta veterinaria para cualquier mascota del plan','Descuentos en veterinarias, pet shops y comercios afiliados para toda la familia','Un solo cobro mensual — facturación unificada'],
      ideal:'Familias con varias mascotas que quieren funciones Platinum sin pagar por separado.'},
   ];
-  const plan=PLANES.find(p=>p.k===sel)||PLANES[1];
+  const plan=PLANES[1];
   const IA_STATES=['Alegre','Ansioso','Triste','Con miedo','Agresivo','Estresado','En calma'];
 
   return(<div className="modal">
     <div className="mhdr">
       <BackBtn onClick={onClose}/>
       <div style={{flex:1}}>
-        <h3><span style={{color:'#5B2C8D'}}>Planes</span><span style={{color:C.w}}> de Suscripción</span></h3>
-        <p>M13 · 5 planes + Plan Regalo · Precios en USD</p>
-      </div>
-    </div>
-
-    {/* Plan selector pills */}
-    <div style={{padding:'8px 12px',borderBottom:`1px solid ${C.bd}`,flexShrink:0}}>
-      <div style={{display:'flex',gap:4,overflowX:'auto',scrollbarWidth:'none'}}>
-        {PLANES.map(p=><button key={p.k} onClick={()=>setSel(p.k)} style={{padding:'5px 11px',borderRadius:18,border:`2px solid ${sel===p.k?p.col:C.bd}`,background:sel===p.k?p.col+'15':'transparent',color:sel===p.k?p.col:C.m,fontSize:11,fontWeight:700,cursor:'pointer',fontFamily:"'Quicksand',sans-serif",whiteSpace:'nowrap',flexShrink:0,transition:'.2s'}}>{p.n}</button>)}
+        <h3><span style={{color:'#5B2C8D'}}>Planes</span><span style={{color:C.tx}}> de Suscripción</span></h3>
+        <p>Toca una tarjeta para ver sus beneficios · Precios en USD</p>
       </div>
     </div>
 
     <div className="scroll" style={{padding:'12px 14px'}}>
-
-      {/* Price header */}
-      <div style={{borderRadius:16,background:plan.g,padding:'16px',marginBottom:13,position:'relative',overflow:'hidden'}}>
-        <div style={{position:'absolute',right:-10,top:-10,opacity:.15}}><Ico n="paw" s={80} c="#fff"/></div>
-        <div style={{display:'flex',alignItems:'flex-start',justifyContent:'space-between'}}>
-          <div>
-            <p style={{margin:'0 0 2px',fontSize:10,fontWeight:800,color:'rgba(255,255,255,.8)',textTransform:'uppercase',letterSpacing:1}}>Plan</p>
-            <h2 style={{margin:'0 0 6px',fontFamily:"'Fredoka One',cursive",fontSize:26,color:'#fff'}}>{plan.n}</h2>
-            <p style={{margin:0,fontSize:11,color:'rgba(255,255,255,.8)',maxWidth:180}}>{plan.ideal}</p>
-          </div>
-          <div style={{textAlign:'right',flexShrink:0}}>
-            <p style={{margin:0,fontFamily:"'Fredoka One',cursive",fontSize:32,color:'#fff',lineHeight:1}}>{plan.p}</p>
-            <p style={{margin:0,fontSize:10.5,color:'rgba(255,255,255,.8)',fontWeight:600}}>{plan.sub}</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Core included in ALL plans */}
-      <Card style={{padding:'11px 13px',marginBottom:11,border:'1px solid rgba(249,200,70,.25)'}}>
-        <div style={{display:'flex',gap:7,alignItems:'center',marginBottom:8}}>
-          <Ico n="star" s={14} c={C.g}/>
-          <p style={{margin:0,fontSize:11,fontWeight:800,color:'#5B2C8D',textTransform:'uppercase',letterSpacing:.5}}>Núcleo incluido en TODOS los planes</p>
-        </div>
-        {CORE.map(f=><div key={f} style={{display:'flex',gap:7,alignItems:'center',marginBottom:5}}>
-          <div style={{width:16,height:16,borderRadius:'50%',background:'rgba(249,200,70,.15)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}><Ico n="check" s={9} c={C.g} sw={3}/></div>
-          <span style={{fontSize:12,color:C.tx,fontWeight:500}}>{f}</span>
-        </div>)}
-      </Card>
-
-      {/* Plan-specific features */}
-      <Card style={{padding:'11px 13px',marginBottom:11,border:`1px solid ${plan.col}33`}}>
-        <div style={{display:'flex',gap:7,alignItems:'center',marginBottom:8}}>
-          <div style={{width:28,height:28,borderRadius:8,background:plan.col+'20',display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="check" s={14} c={plan.col}/></div>
-          <p style={{margin:0,fontSize:11,fontWeight:800,color:plan.col,textTransform:'uppercase',letterSpacing:.5}}>
-            {sel==='basico'?'Incluido en Básico':sel==='familiar'?'Funciones Platinum completas':'Incluye todo el plan anterior +'}
-          </p>
-        </div>
-        {plan.feats.map(f=><div key={f} style={{display:'flex',gap:7,alignItems:'flex-start',marginBottom:7}}>
-          <div style={{width:16,height:16,borderRadius:'50%',background:plan.col+'20',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,marginTop:1}}><Ico n="check" s={9} c={plan.col} sw={3}/></div>
-          <span style={{fontSize:12,color:C.tx,fontWeight:500,lineHeight:1.45}}>{f}</span>
-        </div>)}
-      </Card>
-
-      {/* IA Emocional detail for Platinum/Familiar */}
-      {(sel==='platinum'||sel==='familiar')&&<Card style={{padding:'11px 13px',marginBottom:11,border:'1px solid rgba(178,69,9,.25)'}}>
-        <div style={{display:'flex',gap:7,alignItems:'center',marginBottom:9}}>
-          <Ico n="brain" s={14} c='#D97706'/>
-          <p style={{margin:0,fontSize:11,fontWeight:800,color:'#D97706',textTransform:'uppercase',letterSpacing:.5}}>IA Emocional — 7 estados detectables</p>
-        </div>
-        <div style={{display:'flex',gap:5,flexWrap:'wrap'}}>
-          {IA_STATES.map(st=><span key={st} style={{padding:'4px 9px',borderRadius:9,background:'rgba(178,69,9,.1)',border:'1px solid rgba(178,69,9,.2)',fontSize:11,fontWeight:700,color:'#D97706'}}>{st}</span>)}
-        </div>
-        <p style={{margin:'9px 0 0',fontSize:11,color:C.m,lineHeight:1.5}}>Sube una foto o video y la IA detecta el estado emocional de tu mascota, generando un reporte semanal de bienestar con recomendaciones personalizadas.</p>
-      </Card>}
-
-      {/* Plan Regalo */}
-      {(sel==='estandar'||sel==='premium'||sel==='platinum'||sel==='familiar')&&<Card style={{padding:'11px 13px',marginBottom:11,border:'1px solid rgba(34,197,94,.2)'}}>
-        <div style={{display:'flex',gap:8,alignItems:'center'}}>
-          <div style={{width:32,height:32,borderRadius:9,background:'rgba(34,197,94,.1)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}><Ico n="heart" s={15} c={C.gr}/></div>
-          <div>
-            <p style={{margin:'0 0 1px',fontSize:12,fontWeight:700,color:C.gr}}>Plan Regalo — Adopción en Refugio</p>
-            <p style={{margin:0,fontSize:11,color:C.m}}>Regala 2 meses de Premium gratis a quien adopte en un refugio. Carnet + PawID desde el primer día.</p>
+      {PLANES.map(p=>{const on=open===p.k;return(
+      <div key={p.k} style={{marginBottom:11}}>
+        <div onClick={()=>setOpen(on?null:p.k)} style={{borderRadius:on?'16px 16px 0 0':16,background:p.g,padding:'14px 16px',cursor:'pointer',position:'relative',overflow:'hidden'}}>
+          <div style={{position:'absolute',right:-14,top:-14,opacity:.13}}><Ico n="paw" s={70} c="#fff"/></div>
+          <div style={{display:'flex',alignItems:'flex-start',justifyContent:'space-between',position:'relative'}}>
+            <div style={{flex:1,minWidth:0}}>
+              <p style={{margin:'0 0 2px',fontSize:9.5,fontWeight:800,color:'rgba(255,255,255,.82)',textTransform:'uppercase',letterSpacing:1}}>Plan</p>
+              <h2 style={{margin:'0 0 4px',fontFamily:"'Fredoka One',cursive",fontSize:23,color:'#fff'}}>{p.n}</h2>
+              <p style={{margin:0,fontSize:10.5,color:'rgba(255,255,255,.82)',maxWidth:168,lineHeight:1.35}}>{p.ideal}</p>
+            </div>
+            <div style={{textAlign:'right',flexShrink:0,marginLeft:8,display:'flex',flexDirection:'column',alignItems:'flex-end'}}>
+              <p style={{margin:0,fontFamily:"'Fredoka One',cursive",fontSize:26,color:'#fff',lineHeight:1}}>{p.p}</p>
+              <p style={{margin:'0 0 6px',fontSize:9.5,color:'rgba(255,255,255,.82)',fontWeight:600}}>{p.sub}</p>
+              <div style={{transform:on?'rotate(180deg)':'none',transition:'.2s'}}><Ico n="chev" s={17} c="#fff" sw={2.4}/></div>
+            </div>
           </div>
         </div>
-      </Card>}
-
-      {/* CTA */}
-      <Btn full label={sel==='basico'?'Comenzar gratis':'Suscribirse a '+plan.n} ic={sel==='basico'?'paw':'arrow'} bg={plan.g} co="#fff" style={{marginBottom:7,boxShadow:`0 6px 20px ${plan.col}44`}}/>
-      {sel!=='basico'&&<p style={{textAlign:'center',fontSize:10.5,color:C.m}}>Pagos seguros · Cancela en cualquier momento · Sin contratos</p>}
+        {on&&<div style={{background:C.n2,borderRadius:'0 0 16px 16px',border:`1px solid ${p.col}33`,borderTop:'none',padding:'13px 15px 14px',animation:'fadeIn .25s ease'}}>
+          <div style={{display:'flex',gap:6,alignItems:'center',marginBottom:8}}><Ico n="star" s={13} c={C.g}/><p style={{margin:0,fontSize:10,fontWeight:800,color:'#5B2C8D',textTransform:'uppercase',letterSpacing:.4}}>Incluido en todos los planes</p></div>
+          {CORE.map(f=><div key={f} style={{display:'flex',gap:7,alignItems:'flex-start',marginBottom:5}}><div style={{width:15,height:15,borderRadius:'50%',background:'rgba(249,200,70,.18)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,marginTop:1}}><Ico n="check" s={9} c={C.g} sw={3}/></div><span style={{fontSize:11.5,color:C.tx,fontWeight:500}}>{f}</span></div>)}
+          <div style={{height:1,background:C.bd,margin:'11px 0'}}/>
+          <div style={{display:'flex',gap:6,alignItems:'center',marginBottom:8}}><div style={{width:24,height:24,borderRadius:7,background:p.col+'22',display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="check" s={13} c={p.col}/></div><p style={{margin:0,fontSize:10,fontWeight:800,color:p.col,textTransform:'uppercase',letterSpacing:.4}}>{p.k==='basico'?'Incluido en Básico':p.k==='familiar'?'Funciones Platinum completas':'Incluye todo lo anterior +'}</p></div>
+          {p.feats.map(f=><div key={f} style={{display:'flex',gap:7,alignItems:'flex-start',marginBottom:6}}><div style={{width:15,height:15,borderRadius:'50%',background:p.col+'22',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,marginTop:1}}><Ico n="check" s={9} c={p.col} sw={3}/></div><span style={{fontSize:11.5,color:C.tx,fontWeight:500,lineHeight:1.4}}>{f}</span></div>)}
+          {(p.k==='platinum'||p.k==='familiar')&&<div style={{marginTop:9,padding:'9px 11px',borderRadius:10,background:'rgba(178,69,9,.08)',border:'1px solid rgba(178,69,9,.2)'}}><div style={{display:'flex',gap:6,alignItems:'center',marginBottom:6}}><Ico n="brain" s={13} c='#D97706'/><span style={{fontSize:9.5,fontWeight:800,color:'#D97706',textTransform:'uppercase',letterSpacing:.4}}>IA Emocional — 7 estados</span></div><div style={{display:'flex',gap:4,flexWrap:'wrap'}}>{IA_STATES.map(st=><span key={st} style={{padding:'3px 8px',borderRadius:8,background:'rgba(178,69,9,.1)',fontSize:10,fontWeight:700,color:'#D97706'}}>{st}</span>)}</div></div>}
+          {p.k!=='basico'&&<div style={{marginTop:9,display:'flex',gap:8,alignItems:'center',padding:'8px 11px',borderRadius:10,background:'rgba(34,197,94,.08)',border:'1px solid rgba(34,197,94,.18)'}}><Ico n="heart" s={14} c={C.gr}/><span style={{fontSize:10.5,color:C.gr,fontWeight:700,lineHeight:1.35}}>Plan Regalo: regala 2 meses a quien adopte en un refugio</span></div>}
+          <Btn full label={p.k==='basico'?'Comenzar gratis':'Suscribirse a '+p.n} ic={p.k==='basico'?'paw':'arrow'} bg={p.g} co="#fff" style={{marginTop:12,boxShadow:`0 6px 18px ${p.col}44`}}/>
+          {p.k!=='basico'&&<p style={{textAlign:'center',fontSize:10,color:C.m,marginTop:7}}>Pagos seguros · Cancela cuando quieras</p>}
+        </div>}
+      </div>);})}
 
     </div>
   </div>);
@@ -1304,16 +1327,20 @@ function PlanesModal({onClose}){
 // ═════════════════════════════════════════
 function VacunaModal({onClose,onToast}){
   const[sub,setSub]=useState('calendario');
+  const[scan,setScan]=useState(false);
+  const[scanPct,setScanPct]=useState(0);
+  const startScan=()=>{setScan(true);setScanPct(0);};
+  const runScan=()=>{let p=1;setScanPct(1);const iv=setInterval(()=>{p+=3;setScanPct(Math.min(p,100));if(p>=100){clearInterval(iv);setTimeout(()=>{setScan(false);setScanPct(0);onToast&&onToast('Carnet escaneado · recordatorios de próximas vacunas creados');},650);}},40);};
   const pet=PETS[1];
   const APPLIED=[
-    {name:'Rabia',date:'15 Ene 2024',vet:'Veterinaria El Arca',next:'15 Ene 2025',status:'vigente'},
-    {name:'Parvovirus',date:'20 Feb 2024',vet:'Clínica San Francisco',next:'20 Feb 2025',status:'vigente'},
-    {name:'Distemper',date:'20 Feb 2024',vet:'Clínica San Francisco',next:'20 Feb 2025',status:'vigente'},
-    {name:'Leptospirosis',date:'10 Mar 2024',vet:'Veterinaria El Arca',next:'10 Mar 2025',status:'vigente'},
+    {name:'Quíntuple (Polivalente)',date:'20 Feb 2024',vet:'Clínica San Francisco',status:'vigente',subs:['Moquillo','Hepatitis infecciosa','Parvovirus','Parainfluenza','Leptospirosis']},
+    {name:'Rabia',date:'15 Ene 2024',vet:'Veterinaria El Arca',status:'vigente'},
+    {name:'Desparasitación',date:'10 Mar 2024',vet:'Veterinaria El Arca',status:'al día',deworm:true},
   ];
   const PENDING=[
     {name:'Rabia (refuerzo)',date:'15 Ene 2025',days:18,urgent:true},
-    {name:'Parvovirus (refuerzo)',date:'20 Feb 2025',days:54,urgent:false},
+    {name:'Quíntuple (refuerzo)',date:'20 Feb 2025',days:54,urgent:false},
+    {name:'Desparasitación (trimestral)',date:'10 Jun 2025',days:120,urgent:false,deworm:true},
   ];
   const GOV_EVENTS=[
     {name:'Jornada Nacional de Vacunación Antirrábica',org:'Secretaría de Salud + Alcaldía MDC',date:'15 - 22 Feb 2025',location:'Centros de salud de Col. Kennedy, Col. Palmira y Barrio Abajo',free:true,notified:true},
@@ -1346,7 +1373,13 @@ function VacunaModal({onClose,onToast}){
       <Card style={{padding:'12px',marginBottom:12,display:'flex',gap:10,alignItems:'center'}}>
         <div style={{width:44,height:44,borderRadius:12,overflow:'hidden',border:'2px solid rgba(108,63,232,.3)'}}><Img src={pet.img} style={{width:44,height:44}}/></div>
         <div style={{flex:1}}><h3 style={{margin:'0 0 2px',fontFamily:"'Fredoka One',cursive",fontSize:15,color:C.tx}}>{pet.name}</h3><p style={{margin:0,fontSize:11,color:C.m}}>{pet.br} · {pet.nid}</p></div>
-        <div style={{textAlign:'center'}}><p style={{margin:0,fontSize:18,fontWeight:800,color:C.a,fontFamily:"'Fredoka One',cursive"}}>{APPLIED.length}</p><p style={{margin:0,fontSize:9,color:C.m,fontWeight:700}}>Aplicadas</p></div>
+        <div style={{textAlign:'center'}}><p style={{margin:0,fontSize:18,fontWeight:800,color:C.a,fontFamily:"'Fredoka One',cursive"}}>{APPLIED.length}</p><p style={{margin:0,fontSize:9,color:C.m,fontWeight:700}}>Registros</p></div>
+      </Card>
+
+      <Card onClick={startScan} style={{padding:'11px 12px',marginBottom:12,display:'flex',alignItems:'center',gap:10,cursor:'pointer',background:'linear-gradient(135deg,rgba(108,63,232,.08),rgba(0,180,216,.06))',border:'1.5px dashed rgba(108,63,232,.3)'}}>
+        <div style={{width:38,height:38,borderRadius:11,background:C.gA,display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}><Ico n="scan" s={19} c={C.w}/></div>
+        <div style={{flex:1}}><p style={{margin:0,fontSize:12.5,fontWeight:700,color:C.tx}}>Escanear carnet físico</p><p style={{margin:0,fontSize:10.5,color:C.m}}>Escanea el QR del carnet y crea tus recordatorios</p></div>
+        <Ico n="arrow" s={16} c={C.a}/>
       </Card>
 
       {PENDING.length>0&&<><p style={{margin:'0 0 7px',fontSize:10.5,fontWeight:700,color:C.r,textTransform:'uppercase',letterSpacing:.5}}>Próximas vacunas</p>
@@ -1361,10 +1394,11 @@ function VacunaModal({onClose,onToast}){
       <p style={{margin:'12px 0 7px',fontSize:10.5,fontWeight:700,color:'#5B2C8D',textTransform:'uppercase',letterSpacing:.5}}>Historial de vacunas aplicadas</p>
       {APPLIED.map((v,i)=><Card key={i} style={{padding:'10px 12px',marginBottom:7}}>
         <div style={{display:'flex',alignItems:'center',gap:9}}>
-          <div style={{width:30,height:30,borderRadius:8,background:'rgba(34,197,94,.1)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}><Ico n="check" s={14} c={C.gr}/></div>
+          <div style={{width:30,height:30,borderRadius:8,background:v.deworm?'rgba(108,63,232,.1)':'rgba(34,197,94,.1)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}><Ico n={v.deworm?'shield':'check'} s={14} c={v.deworm?C.a:C.gr}/></div>
           <div style={{flex:1}}><p style={{margin:0,fontSize:12.5,fontWeight:700,color:C.tx}}>{v.name}</p><p style={{margin:0,fontSize:10.5,color:C.m}}>{v.date} · {v.vet}</p></div>
-          <span style={{fontSize:9,fontWeight:700,color:C.gr,background:'rgba(34,197,94,.1)',padding:'2px 7px',borderRadius:6}}>{v.status}</span>
+          <span style={{fontSize:9,fontWeight:700,color:v.deworm?C.a:C.gr,background:v.deworm?'rgba(108,63,232,.1)':'rgba(34,197,94,.1)',padding:'2px 7px',borderRadius:6}}>{v.status}</span>
         </div>
+        {v.subs&&<div style={{display:'flex',flexWrap:'wrap',gap:4,marginTop:8,paddingLeft:39}}>{v.subs.map(s=><span key={s} style={{fontSize:9,fontWeight:700,color:'#5B2C8D',background:'rgba(108,63,232,.08)',border:'1px solid rgba(108,63,232,.15)',padding:'2px 7px',borderRadius:6}}>{s}</span>)}</div>}
       </Card>)}
     </div>}
 
@@ -1393,7 +1427,7 @@ function VacunaModal({onClose,onToast}){
 
     {sub==='descuentos'&&<div style={{animation:'fadeIn .3s ease'}}>
       <Card style={{padding:'10px 12px',marginBottom:12,border:'1px solid rgba(249,200,70,.2)'}}>
-        <div style={{display:'flex',gap:7,alignItems:'center'}}><Ico n="tag" s={14} c="'#5B2C8D'"/><p style={{margin:0,fontSize:12,fontWeight:700,color:C.tx}}>Descuentos exclusivos para usuarios de ID Pawtitas</p></div>
+        <div style={{display:'flex',gap:7,alignItems:'center'}}><Ico n="tag" s={14} c="'#5B2C8D'"/><p style={{margin:0,fontSize:12,fontWeight:700,color:C.tx}}>Descuentos exclusivos para usuarios de BOOPID</p></div>
       </Card>
       {VET_DEALS.map((d,i)=><Card key={i} style={{padding:'12px',marginBottom:9}}>
         <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',marginBottom:7}}>
@@ -1411,6 +1445,28 @@ function VacunaModal({onClose,onToast}){
     </div>}
 
     </div>
+    {scan&&<div style={{position:'absolute',inset:0,zIndex:150,background:C.n1,display:'flex',flexDirection:'column',animation:'slideUp .25s ease'}}>
+      <div className="mhdr"><BackBtn onClick={()=>{setScan(false);setScanPct(0);}}/><div><h3>Escanear carnet</h3><p>Lectura de fechas de vacunación</p></div></div>
+      <div style={{flex:1,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',padding:'18px',gap:14}}>
+        <div style={{width:190,height:240,borderRadius:14,background:C.n2,border:'2px solid rgba(108,63,232,.3)',position:'relative',overflow:'hidden',boxShadow:'0 8px 24px rgba(108,63,232,.15)'}}>
+          <div style={{background:C.gA,height:34,display:'flex',alignItems:'center',justifyContent:'center'}}><span style={{fontFamily:"'Fredoka One',cursive",fontSize:12,color:C.w,letterSpacing:.5}}>CARNET DE VACUNACIÓN</span></div>
+          <div style={{padding:'20px 14px',display:'flex',flexDirection:'column',alignItems:'center',gap:9}}>
+            <div style={{width:120,height:120,background:'#fff',borderRadius:10,padding:9,display:'flex',alignItems:'center',justifyContent:'center',boxShadow:'0 2px 8px rgba(0,0,0,.08)'}}><Ico n="qr" s={100} c={C.n1} sw={1}/></div>
+            <span style={{fontSize:9,color:C.m,fontWeight:700,fontFamily:"'Space Mono',monospace"}}>QR del carnet físico</span>
+          </div>
+          {[[8,8,null,null],[8,null,null,null,8],[null,null,8,8],[null,null,8,null,8]].map(([t,r,b,l],i)=><div key={i} style={{position:'absolute',top:t!=null?t:'auto',right:r!=null?r:'auto',bottom:b!=null?b:'auto',left:l!=null?l:'auto',width:20,height:20,borderTop:t!=null?'3px solid rgba(108,63,232,.7)':'none',borderRight:r!=null?'3px solid rgba(108,63,232,.7)':'none',borderBottom:b!=null?'3px solid rgba(108,63,232,.7)':'none',borderLeft:l!=null?'3px solid rgba(108,63,232,.7)':'none'}}/>)}
+          {scanPct>0&&<div style={{position:'absolute',left:'6%',right:'6%',height:2,background:'linear-gradient(90deg,transparent,rgba(108,63,232,.85),transparent)',animation:'scanLine 1.6s ease-in-out infinite',boxShadow:'0 0 8px rgba(108,63,232,.5)',top:'25%'}}/>}
+        </div>
+        <p style={{margin:0,fontSize:12,fontWeight:700,color:C.a,textAlign:'center'}}>{scanPct===0?'Coloca el QR del carnet dentro del marco':scanPct<100?'Leyendo el código QR...':'¡Recordatorios creados!'}</p>
+        {scanPct===0
+          ? <Btn label="ESCANEAR" ic="scan" bg={C.gA} co={C.w} onClick={runScan} style={{padding:'12px 28px',letterSpacing:.5}}/>
+          : <div style={{width:'100%',maxWidth:220}}>
+              <div style={{display:'flex',justifyContent:'space-between',marginBottom:5}}><span style={{fontSize:10,fontWeight:700,color:C.m}}>Procesando</span><span style={{fontFamily:"'Space Mono',monospace",fontSize:11,fontWeight:700,color:C.a}}>{scanPct}%</span></div>
+              <div style={{height:5,borderRadius:5,background:'rgba(108,63,232,.12)',overflow:'hidden',marginBottom:8}}><div style={{height:'100%',width:scanPct+'%',background:C.gA,borderRadius:5,transition:'width .1s'}}/></div>
+              {[['Detectando código QR',0],['Leyendo carnet de vacunación',30],['Cotejando fechas del carnet',60],['Creando recordatorios',85]].map(([t,thr])=><p key={t} style={{margin:'2px 0',fontSize:9.5,color:scanPct>thr?C.a:C.m2,fontWeight:scanPct>thr?700:400,fontFamily:"'Space Mono',monospace"}}>[{scanPct>thr?'OK':'  '}] {t}</p>)}
+            </div>}
+      </div>
+    </div>}
   </div>);
 }
 // ═════════════════════════════════════════
@@ -1424,7 +1480,7 @@ function RegistroModal({onClose,onToast}){
     ownerName:'Andrea Reyes',ownerDui:'0801-1990-12345',ownerPhone:'+504 9123-4567',ownerEmail:'andrea.reyes@email.com',ownerColonia:'Col. Palmira, Tegucigalpa',
     petName:'',species:'',breed:'',dob:'',weight:'',color:'',sterilized:'',
     photo:false,
-    vac_rabia:false,vac_parvo:false,vac_distemper:false,vac_lepto:false,vetName:'',vetPhone:'',
+    vac_quintuple:false,vac_rabia:false,vac_desparasit:false,vetName:'',vetPhone:'',
   });
   const set=(k,v)=>setForm(f=>({...f,[k]:v}));
   const genNru=()=>{
@@ -1444,7 +1500,7 @@ function RegistroModal({onClose,onToast}){
     <div onClick={()=>set(key,!form[key])} style={{width:20,height:20,borderRadius:6,border:`2px solid ${form[key]?C.gr:C.bd}`,background:form[key]?C.gr:'transparent',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}>
       {form[key]&&<Ico n="check" s={12} c={C.w} sw={3}/>}
     </div>
-    <span style={{fontSize:12.5,fontWeight:600,color:form[key]?C.w:C.m}}>{label}</span>
+    <span style={{fontSize:12.5,fontWeight:600,color:form[key]?C.tx:C.m}}>{label}</span>
   </label>;
 
   return(<div className="modal">
@@ -1462,7 +1518,7 @@ function RegistroModal({onClose,onToast}){
     {step<6&&<div style={{padding:'6px 13px',borderBottom:`1px solid ${C.bd}`,flexShrink:0}}>
       <div style={{display:'flex',gap:3}}>{STEPS.map((s,i)=><div key={s} style={{flex:1,textAlign:'center'}}>
         <div style={{height:3,borderRadius:3,background:i+1<=step?C.a:'rgba(30,120,200,.15)',marginBottom:2,transition:'.3s'}}/>
-        <span style={{fontSize:7.5,color:i+1===step?C.w:C.m2,fontWeight:i+1===step?700:400}}>{s}</span>
+        <span style={{fontSize:7.5,color:i+1===step?C.a:C.m2,fontWeight:i+1===step?700:400}}>{s}</span>
       </div>)}</div>
     </div>}
 
@@ -1488,7 +1544,7 @@ function RegistroModal({onClose,onToast}){
       {inp2('petName','Nombre de la mascota')}
       <div style={{marginBottom:9}}>
         <label style={{fontSize:10,fontWeight:700,color:C.m,textTransform:'uppercase',letterSpacing:.4,display:'block',marginBottom:5}}>Especie</label>
-        <div style={{display:'flex',gap:7}}>{['Perro','Gato'].map(sp=><button key={sp} onClick={()=>set('species',sp)} style={{flex:1,padding:'9px',borderRadius:10,border:`2px solid ${form.species===sp?C.a:C.bd}`,background:form.species===sp?'rgba(108,63,232,.12)':'transparent',color:form.species===sp?C.w:C.m,fontFamily:"'Quicksand',sans-serif",fontSize:13,fontWeight:700,cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center',gap:6}}>
+        <div style={{display:'flex',gap:7}}>{['Perro','Gato'].map(sp=><button key={sp} onClick={()=>set('species',sp)} style={{flex:1,padding:'9px',borderRadius:10,border:`2px solid ${form.species===sp?C.a:C.bd}`,background:form.species===sp?'rgba(108,63,232,.12)':'transparent',color:form.species===sp?C.a:C.m,fontFamily:"'Quicksand',sans-serif",fontSize:13,fontWeight:700,cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center',gap:6}}>
           <Ico n="paw" s={16} c={form.species===sp?C.a:C.m}/>{sp}
         </button>)}</div>
       </div>
@@ -1516,7 +1572,7 @@ function RegistroModal({onClose,onToast}){
         <Btn label="Desde galería" ic="image" bg="rgba(255,255,255,.07)" co={C.m} onClick={()=>set('photo',true)} style={{flex:1,border:`1px solid ${C.bd}`}}/>
       </div>
       <div style={{marginTop:11,padding:'9px 11px',borderRadius:10,background:'rgba(108,63,232,.06)',border:`1px solid ${C.bd}`}}>
-        <p style={{margin:0,fontSize:11,color:C.m,lineHeight:1.5}}>Después de registrar la foto, podrás activar el <strong style={{color:C.b}}>PawID biométrico nasal</strong> para generar el NRU único de tu mascota.</p>
+        <p style={{margin:0,fontSize:11,color:C.m,lineHeight:1.5}}>Después de registrar la foto, podrás activar el <strong style={{color:C.b}}>BoopID biométrico nasal</strong> para generar el NRU único de tu mascota.</p>
       </div>
     </div>}
 
@@ -1524,7 +1580,10 @@ function RegistroModal({onClose,onToast}){
       <p style={{margin:'0 0 4px',fontSize:13,fontWeight:700,color:C.tx}}>Historial de salud</p>
       <p style={{margin:'0 0 11px',fontSize:11.5,color:C.m}}>Registro de vacunas. Esta información aparecerá en el carnet digital y es requerida por la Veterinaria Municipal.</p>
       <p style={{margin:'0 0 7px',fontSize:10,fontWeight:700,color:C.m,textTransform:'uppercase',letterSpacing:.5}}>Vacunas aplicadas</p>
-      {[['vac_rabia','Rabia (obligatoria por ley)'],['vac_parvo','Parvovirus'],['vac_distemper','Distemper (Moquillo)'],['vac_lepto','Leptospirosis']].map(([k,l])=>check(k,l))}
+      {check('vac_quintuple','Quíntuple (Polivalente)')}
+      <div style={{display:'flex',flexWrap:'wrap',gap:4,margin:'-2px 0 9px',paddingLeft:30,alignItems:'center'}}><span style={{fontSize:9,color:C.m,fontWeight:700,marginRight:2}}>Incluye:</span>{['Moquillo','Hepatitis infecciosa','Parvovirus','Parainfluenza','Leptospirosis'].map(sv=><span key={sv} style={{fontSize:9,fontWeight:700,color:'#5B2C8D',background:'rgba(108,63,232,.08)',border:'1px solid rgba(108,63,232,.15)',padding:'2px 7px',borderRadius:6}}>{sv}</span>)}</div>
+      {check('vac_rabia','Rabia (obligatoria por ley)')}
+      {check('vac_desparasit','Desparasitación')}
       <p style={{margin:'10px 0 7px',fontSize:10,fontWeight:700,color:C.m,textTransform:'uppercase',letterSpacing:.5}}>Veterinario de cabecera (opcional)</p>
       {inp2('vetName','Nombre del veterinario o clínica')}
       {inp2('vetPhone','Teléfono de la clínica')}
@@ -1535,7 +1594,7 @@ function RegistroModal({onClose,onToast}){
 
     {step===5&&<div style={{animation:'fadeIn .3s ease'}}>
       <p style={{margin:'0 0 11px',fontSize:13,fontWeight:700,color:C.tx}}>Confirma el registro</p>
-      {[['Propietario',form.ownerName,'user'],['Identidad',form.ownerDui,'shield'],['Contacto',form.ownerPhone,'bell'],['Colonia',form.ownerColonia,'pin'],['Mascota',form.petName||'Sin nombre','paw'],['Especie',form.species||'Sin especificar','paw'],['Raza',form.breed||'Sin especificar','paw'],['Peso',form.weight?form.weight+' kg':'Sin registrar','activity'],['Esterilizado',form.sterilized||'Sin indicar','check'],['Vacuna rabia',form.vac_rabia?'Sí':'No registrada','shield']].map(([l,v,ic])=><div key={l} style={{display:'flex',alignItems:'center',gap:9,paddingBottom:7,marginBottom:7,borderBottom:`1px solid ${C.bd}`}}>
+      {[['Propietario',form.ownerName,'user'],['Identidad',form.ownerDui,'shield'],['Contacto',form.ownerPhone,'bell'],['Colonia',form.ownerColonia,'pin'],['Mascota',form.petName||'Sin nombre','paw'],['Especie',form.species||'Sin especificar','paw'],['Raza',form.breed||'Sin especificar','paw'],['Peso',form.weight?form.weight+' kg':'Sin registrar','activity'],['Esterilizado',form.sterilized||'Sin indicar','check'],['Quíntuple',form.vac_quintuple?'Sí':'No','vaccine'],['Rabia',form.vac_rabia?'Sí':'No','shield'],['Desparasitación',form.vac_desparasit?'Sí':'No','check']].map(([l,v,ic])=><div key={l} style={{display:'flex',alignItems:'center',gap:9,paddingBottom:7,marginBottom:7,borderBottom:`1px solid ${C.bd}`}}>
         <div style={{width:26,height:26,borderRadius:7,background:'rgba(108,63,232,.08)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}><Ico n={ic} s={13} c={C.a}/></div>
         <span style={{fontSize:11,color:C.m,fontWeight:600,minWidth:90}}>{l}</span>
         <span style={{fontSize:12,color:C.tx,fontWeight:700,flex:1,textAlign:'right'}}>{v}</span>
@@ -1548,8 +1607,8 @@ function RegistroModal({onClose,onToast}){
     {step===6&&<div style={{textAlign:'center',padding:'14px 0',animation:'pop .4s cubic-bezier(.34,1.56,.64,1)'}}>
       <div style={{width:68,height:68,borderRadius:21,background:'rgba(108,63,232,.12)',border:`2px solid ${C.a}`,display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 13px'}}><Ico n="paw" s={34} c={C.a}/></div>
       <h3 style={{fontFamily:"'Fredoka One',cursive",fontSize:22,margin:'0 0 4px'}}>
-        <span style={{color:C.r}}>Paw</span><span style={{color:C.g}}>ti</span><span style={{color:'#4A148C'}}>tas</span>
-        <span style={{color:C.w}}> — Registro exitoso!</span>
+        <span style={{color:C.b}}>B</span><span style={{color:C.r}}>O</span><span style={{color:C.a}}>O</span><span style={{color:C.r}}>P</span><span style={{color:C.g}}>I</span><span style={{color:'#4A148C'}}>D</span>
+        <span style={{color:C.tx}}> — Registro exitoso!</span>
       </h3>
       <p style={{color:C.m,fontSize:12,margin:'0 0 16px'}}>Tu mascota ya está en el sistema municipal</p>
       <div style={{background:C.n3,borderRadius:14,padding:'14px',marginBottom:14,textAlign:'left'}}>
@@ -1561,7 +1620,7 @@ function RegistroModal({onClose,onToast}){
       </div>
       <div style={{display:'flex',gap:7,marginBottom:9}}>
         <Btn label="Ver Carnet Digital" ic="qr" bg={C.gA} co={C.w} style={{flex:2}} onClick={()=>{onToast&&onToast('Carnet generado · NRU: '+nru);onClose();}}/>
-        <Btn label="Activar PawID" ic="nose" bg="rgba(0,180,216,.12)" co={C.b} style={{flex:1.5,border:'1px solid rgba(0,180,216,.3)'}} onClick={()=>{onToast&&onToast('Activando PawID biométrico...');onClose();}}/>
+        <Btn label="Activar BoopID" ic="nose" bg="rgba(0,180,216,.12)" co={C.b} style={{flex:1.5,border:'1px solid rgba(0,180,216,.3)'}} onClick={()=>{onToast&&onToast('Activando BoopID biométrico...');onClose();}}/>
       </div>
       <p style={{fontSize:11,color:C.m,lineHeight:1.5}}>La Veterinaria Municipal del Distrito Central ha sido notificada. Tu mascota ya aparece en el censo oficial de mascotas registradas.</p>
     </div>}
@@ -1613,13 +1672,13 @@ function App(){
   const goTab=(k)=>{setTab(k);window.updatePitch&&window.updatePitch(k==='match'?'match':k==='explore'?'explore':k==='perfil'?'perfil':'home');document.querySelectorAll('.pitch-nav button').forEach(b=>b.classList.remove('active'));};
   if(scr==='login')return<><SBar/><LoginScreen onLogin={()=>setScr('splash')}/></>;
   if(scr==='splash')return<><SBar/><SplashScreen onDone={()=>{setScr('app');window.updatePitch&&window.updatePitch('home');}}/></>;
-  const NAV=[{k:'home',l:'Inicio',ic:'home'},{k:'match',l:'PawMatch',ic:'heart'},{k:'_fab',fab:true},{k:'explore',l:'Explorar',ic:'compass'},{k:'perfil',l:'Perfil',ic:'user'}];
+  const NAV=[{k:'home',l:'Inicio',ic:'home'},{k:'match',l:'BoopMatch',ic:'heart'},{k:'_fab',fab:true},{k:'explore',l:'Explorar',ic:'compass'},{k:'perfil',l:'Perfil',ic:'user'}];
   return(<>
     <SBar/>
     {toast&&<Toast msg={toast}/>}
     {showPawID&&<PawIDModal onClose={()=>setShowPawID(false)}/>}
     {showCarnet&&<CarnetModal onClose={()=>setShowCarnet(false)}/>}
-    {showDenuncia&&<DenunciaModal onClose={()=>setShowDenuncia(false)}/>}
+    {showDenuncia&&<DenunciaModal onClose={()=>setShowDenuncia(false)} onToast={nt}/>}
     {showChat&&<ChatModal onClose={()=>setShowChat(false)}/>}
     {showWalk&&<WalkModal onClose={()=>setShowWalk(false)} onToast={nt}/>}
     {showNotif&&<NotifModal onClose={()=>setShowNotif(false)} notifs={notifs} setNotifs={setNotifs}/>}
