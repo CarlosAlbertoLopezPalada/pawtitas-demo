@@ -173,10 +173,10 @@ const C={
 
 // ─── IMAGE URLS ────────────────────────────
 const U={
-  pimpy: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&q=80',
-  laika: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&q=80',
-  odie:  'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&q=80',
-  dona:  'https://images.unsplash.com/photo-1513245543132-31f507417b26?w=400&q=80',
+  pimpy: 'img/Lucho.jpg',
+  laika: 'img/Luna.jpg',
+  odie:  'img/Pimpy.jpg',
+  dona:  'img/Manchitas.jpg',
   naran: 'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=400&q=80',
   bobby: 'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&q=80',
   andr:  'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80',
@@ -185,34 +185,34 @@ const U={
 
 // ─── DATA ─────────────────────────────────
 const USERS={
-  1:{id:1,name:'Andrea Reyes', ini:'AR',src:U.andr,bio:'Dueño(a) de Pimpy | Col. Palmira',  pts:2400,rank:2,fol:1203},
-  2:{id:2,name:'Carlos Mejía', ini:'CM',src:U.carl,bio:'Dueño(a) de Laika | Col. Kennedy',  pts:1890,rank:4,fol:876},
-  3:{id:3,name:'Don Manuel',   ini:'DM',src:null,  bio:'12 años con Odie | Barrio Abajo',pts:3100,rank:1,fol:2340},
-  4:{id:4,name:'Sofía Torres', ini:'ST',src:null,  bio:'Dueño(a) de Donatelo | Centro',   pts:1200,rank:5,fol:654},
+  1:{id:1,name:'Andrea Reyes', ini:'AR',src:U.andr,bio:'Dueño(a) de Lucho | Col. Palmira',  pts:2400,rank:2,fol:1203},
+  2:{id:2,name:'Carlos Mejía', ini:'CM',src:U.carl,bio:'Dueño(a) de Luna | Col. Kennedy',  pts:1890,rank:4,fol:876},
+  3:{id:3,name:'Don Manuel',   ini:'DM',src:null,  bio:'12 años con Pimpy | Barrio Abajo',pts:3100,rank:1,fol:2340},
+  4:{id:4,name:'Sofía Torres', ini:'ST',src:null,  bio:'Dueño(a) de Manchitas | Centro',   pts:1200,rank:5,fol:654},
   5:{id:5,name:'Laura Pineda', ini:'LP',src:null,  bio:'Naranjita es mi mundo | Lomas',  pts:1650,rank:3,fol:987},
 };
 const PETS={
-  1:{id:1,name:'Pimpy',   sp:'Perro',br:'Terrier Mestizo', age:'3 años',w:'6.2 kg',ow:1,img:U.pimpy,nid:'NAS-8F3K-01-0047',vac:['Rabia','Parvovirus','Distemper','Leptospirosis'],neu:true, reg:'01/01/2024'},
-  2:{id:2,name:'Laika',   sp:'Perro',br:'Mestiza',         age:'4 años',w:'18 kg', ow:2,img:U.laika,nid:'NAS-2B9M-01-0012',vac:['Rabia','Parvovirus','Distemper'],          neu:true, reg:'15/03/2023'},
-  3:{id:3,name:'Odie A',  sp:'Perro',br:'Mestizo',         age:'12 años',w:'24 kg',ow:3,img:U.odie, nid:'NAS-7K1P-01-0003',vac:['Rabia','Parvovirus','Distemper'],          neu:true, reg:'10/06/2022'},
-  4:{id:4,name:'Donatelo',sp:'Gato', br:'Siamés',          age:'1 año', w:'3.5 kg',ow:4,img:U.dona, nid:'NAS-4R6T-02-0089',vac:['Rabia','Leucemia felina'],                  neu:false,reg:'20/11/2023'},
+  1:{id:1,name:'Lucho',   sp:'Perro',br:'Bulldog Francés', age:'3 años',w:'6.2 kg',ow:1,img:U.pimpy,nid:'NAS-8F3K-01-0047',vac:['Rabia','Parvovirus','Distemper','Leptospirosis'],neu:true, reg:'01/01/2024'},
+  2:{id:2,name:'Luna',   sp:'Perro',br:'Mestiza',         age:'4 años',w:'18 kg', ow:2,img:U.laika,nid:'NAS-2B9M-01-0012',vac:['Rabia','Parvovirus','Distemper'],          neu:true, reg:'15/03/2023'},
+  3:{id:3,name:'Pimpy',  sp:'Perro',br:'Maltés Mestizo',         age:'12 años',w:'6 kg',ow:3,img:U.odie, nid:'NAS-7K1P-01-0003',vac:['Rabia','Parvovirus','Distemper'],          neu:true, reg:'10/06/2022'},
+  4:{id:4,name:'Manchitas',sp:'Gato', br:'Mestizo Bicolor',          age:'1 año', w:'3.5 kg',ow:4,img:U.dona, nid:'NAS-4R6T-02-0089',vac:['Rabia','Leucemia felina'],                  neu:false,reg:'20/11/2023'},
   5:{id:5,name:'Naranjita',sp:'Gato',br:'Tabby Atigrado',  age:'5 años',w:'5.5 kg',ow:5,img:U.naran,nid:'NAS-9W2X-02-0056',vac:['Rabia','Leucemia felina','Panleucopenia'], neu:true, reg:'05/08/2023'},
 };
 const FEED_POSTS=[
-  {id:1,uid:1,pid:1,img:U.pimpy,cap:'Lista para su paseo dominical por la Palmira. Pimpy siempre radiante! #BOOPID',likes:347,liked:false,comments:[{uid:2,t:'Que divina!!'},{uid:5,t:'Ese moñito es todo.'}],time:'2h'},
-  {id:2,uid:2,pid:2,img:U.laika,cap:'Laika de copiloto rumbo a las montañas. 4 años y cada día más aventurera. #LaikaAventurera',likes:412,liked:false,comments:[{uid:1,t:'Abrazo enorme para Laika!'}],time:'4h'},
-  {id:3,uid:3,pid:3,img:U.odie, cap:'12 años juntos. Odie llegó cachorro y hoy es el abuelo más sabio del barrio. #OdieEterno',likes:891,liked:false,comments:[{uid:1,t:'Esto me hizo llorar. Hermoso.'},{uid:4,t:'Los mestizos son los más leales.'}],time:'6h'},
-  {id:4,uid:4,pid:4,img:U.dona, cap:'Donatelo descubrió que la cámara existe. Ahora posa como modelo. #Donatelo',likes:523,liked:false,comments:[{uid:5,t:'Esos ojos!! Parece de revista.'}],time:'8h'},
+  {id:1,uid:1,pid:1,img:U.pimpy,cap:'Listo para su paseo dominical por la Palmira. Lucho siempre radiante! #BOOPID',likes:347,liked:false,comments:[{uid:2,t:'Que divino!!'}],time:'2h'},
+  {id:2,uid:2,pid:2,img:U.laika,cap:'Luna de copiloto rumbo a las montañas. 4 años y cada día más aventurera. #LunaAventurera',likes:412,liked:false,comments:[{uid:1,t:'Abrazo enorme para Luna!'}],time:'4h'},
+  {id:3,uid:3,pid:3,img:U.odie, cap:'12 años juntos. Pimpy llegó cachorro y hoy es el abuelo más sabio del barrio. #PimpyEterno',likes:891,liked:false,comments:[{uid:1,t:'Esto me hizo llorar. Hermoso.'},{uid:4,t:'Los mestizos son los más leales.'}],time:'6h'},
+  {id:4,uid:4,pid:4,img:U.dona, cap:'Manchitas descubrió que la cámara existe. Ahora posa como modelo. #Manchitas',likes:523,liked:false,comments:[{uid:5,t:'Esos ojos!! Parece de revista.'}],time:'8h'},
   {id:5,uid:5,pid:5,img:U.naran,cap:'Naranjita atrapando rayos de sol. La vida perfecta según ella. #GataTabby',likes:298,liked:false,comments:[],time:'10h'},
 ];
 const NOTIFS=[
-  {id:1,type:'like',    msg:'Don Manuel boopeó tu post de Pimpy', time:'5min', read:false, ic:'heart'},
-  {id:2,type:'match',   msg:'BoopMatch con Laika — el chat está disponible!',time:'20min',read:false,ic:'paw'},
+  {id:1,type:'like',    msg:'Don Manuel boopeó tu post de Lucho', time:'5min', read:false, ic:'heart'},
+  {id:2,type:'match',   msg:'BoopMatch con Luna — el chat está disponible!',time:'20min',read:false,ic:'paw'},
   {id:3,type:'comment', msg:'Laura Pineda comentó en tu publicación',     time:'1h',  read:false, ic:'chat'},
   {id:4,type:'sighting',msg:'Avistamiento de Bobby en Col. Kennedy',       time:'2h',  read:true,  ic:'pin'},
-  {id:5,type:'vaccine', msg:'Vacuna de Rabia de Pimpy vence en 30 días',  time:'1d',  read:true,  ic:'shield'},
+  {id:5,type:'vaccine', msg:'Vacuna de Rabia de Lucho vence en 30 días',  time:'1d',  read:true,  ic:'shield'},
   {id:6,type:'like',    msg:'Carlos Mejía boopeó tu publicación',   time:'1d',  read:true,  ic:'heart'},
-  {id:7,type:'rank',    msg:'Odie A es la Mascota del Día — 1,891 votos!', time:'2d', read:true,  ic:'trophy'},
+  {id:7,type:'rank',    msg:'Pimpy es la Mascota del Día — 1,891 votos!', time:'2d', read:true,  ic:'trophy'},
 ];
 const RANK=[
   {pid:3,v:1891,t:'+5%'},{pid:1,v:1347,t:'+18%'},{pid:5,v:987,t:'+8%'},
@@ -469,7 +469,7 @@ function HomeScreen({posts,setPosts,onToast,openPost}){
       <Card style={{padding:'10px 12px',background:'linear-gradient(135deg,rgba(249,200,70,.08),rgba(255,107,107,.06))',border:'1.5px solid rgba(249,200,70,.2)'}}>
         <div style={{display:'flex',alignItems:'center',gap:8}}><div style={{width:42,height:42,borderRadius:'50%',overflow:'hidden',border:`3px solid ${C.g}`}}><Img src={PETS[3].img} style={{width:42,height:42}}/></div>
           <div style={{flex:1}}><span style={{fontSize:8.5,fontWeight:800,color:'#5B2C8D',textTransform:'uppercase',letterSpacing:1.5,display:'block'}}>Mascota del Día</span><p style={{margin:0,fontSize:13,fontFamily:"'Fredoka One',cursive"}}>
-  <span style={{color:C.r}}>Odie A</span>
+  <span style={{color:C.r}}>Pimpy</span>
   <span style={{color:'#5B2C8D'}}> — 12 años de </span>
   <span style={{color:'#5B2C8D'}}>amor</span>
 </p><p style={{margin:0,fontSize:10,color:C.m}}>1,891 votos · Barrio Abajo</p></div>
@@ -515,7 +515,7 @@ function HomeScreen({posts,setPosts,onToast,openPost}){
 // ═════════════════════════════════════════
 function PostModal({onClose,onPublish}){
   const[step,setStep]=useState('compose');const[cap,setCap]=useState('');const[pct,setPct]=useState(0);const[vr,setVr]=useState(null);
-  const analyze=()=>{setStep('vision');let p=0;const iv=setInterval(()=>{p+=3;setPct(p);if(p>=100){clearInterval(iv);setTimeout(()=>setVr({sp:'Perro (Canis lupus familiaris)',br:'Terrier Mestizo',conf:96,edad:'2-4 años',cond:'Excelente',col:'Blanco con manchas negras'}),400);}},40);};
+  const analyze=()=>{setStep('vision');let p=0;const iv=setInterval(()=>{p+=3;setPct(p);if(p>=100){clearInterval(iv);setTimeout(()=>setVr({sp:'Perro (Canis lupus familiaris)',br:'Bulldog Francés',conf:96,edad:'2-4 años',cond:'Excelente',col:'Blanco con manchas negras'}),400);}},40);};
   const publish=()=>{setStep('pub');setTimeout(()=>setStep('done'),2000);};
   return(<div className="modal">
     <div className="mhdr"><BackBtn onClick={onClose}/><div><h3>Crear Publicación</h3><p>M05 · BoopVision + BoopGuard</p></div></div>
@@ -757,7 +757,7 @@ function MatchScreen({onToast,openChat}){
       <h2 style={{fontFamily:"'Fredoka One',cursive",fontSize:24,margin:0}}>
   <span style={{color:C.r}}>Boop</span><span style={{color:C.g}}>Match</span><span style={{color:C.g}}>!</span>
 </h2>
-      <p style={{color:'rgba(255,255,255,.7)',fontSize:12,textAlign:'center',maxWidth:180,fontWeight:600}}>Pimpy y {PETS[matched.pid]?.name} se han conectado. El chat está disponible.</p>
+      <p style={{color:'rgba(255,255,255,.7)',fontSize:12,textAlign:'center',maxWidth:180,fontWeight:600}}>Lucho y {PETS[matched.pid]?.name} se han conectado. El chat está disponible.</p>
       <div style={{display:'flex',gap:7,alignItems:'center'}}>
         <div style={{width:42,height:42,borderRadius:'50%',overflow:'hidden',border:`2px solid ${C.g}`}}><Img src={PETS[1].img} style={{width:42,height:42}}/></div>
         <Ico n="heart" s={18} c={C.r}/>
@@ -942,7 +942,7 @@ function ExploreScreen({onToast}){
       <Card style={{padding:'12px',marginBottom:11}}><div style={{display:'flex',gap:8,alignItems:'center',marginBottom:8}}><div style={{width:32,height:32,borderRadius:9,background:'rgba(108,63,232,.12)',display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="brain" s={16} c={C.a}/></div><div><p style={{margin:0,fontSize:12,fontWeight:700,color:C.tx}}>IA BoopMood</p><p style={{margin:0,fontSize:10,color:C.m}}>Análisis emocional aparente por imagen</p></div></div><Legal/></Card>
       {mStep==='select'&&<div>
         <div style={{width:'100%',aspectRatio:'1.5',background:C.n3,borderRadius:15,border:`2px dashed ${C.bd}`,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:8,marginBottom:12,cursor:'pointer'}} onClick={analyzeMood}>
-          <Ico n="camera" s={22} c={C.a}/><p style={{margin:0,fontSize:12,fontWeight:700,color:C.m}}>Cargar foto de Pimpy</p>
+          <Ico n="camera" s={22} c={C.a}/><p style={{margin:0,fontSize:12,fontWeight:700,color:C.m}}>Cargar foto de Lucho</p>
         </div>
         <Btn full label="Analizar estado emocional" ic="brain" bg={C.gA} co={C.w} onClick={analyzeMood}/>
       </div>}
@@ -955,7 +955,7 @@ function ExploreScreen({onToast}){
         <Card style={{padding:'13px',marginBottom:10,border:`1px solid ${mResult.c}33`}}>
           <div style={{display:'flex',gap:10,alignItems:'center',marginBottom:9}}>
             <div style={{width:44,height:44,borderRadius:'50%',overflow:'hidden',border:`2px solid ${mResult.c}`}}><Img src={PETS[1].img} style={{width:44,height:44}}/></div>
-            <div style={{flex:1}}><p style={{margin:0,fontSize:10.5,color:C.m}}>Estado detectado en Pimpy</p><h3 style={{margin:0,fontFamily:"'Fredoka One',cursive",fontSize:18,color:mResult.c}}>{mResult.l}</h3></div>
+            <div style={{flex:1}}><p style={{margin:0,fontSize:10.5,color:C.m}}>Estado detectado en Lucho</p><h3 style={{margin:0,fontFamily:"'Fredoka One',cursive",fontSize:18,color:mResult.c}}>{mResult.l}</h3></div>
             <span style={{fontSize:13,fontWeight:800,color:mResult.c,fontFamily:"'Space Mono',monospace"}}>{mResult.conf}%</span>
           </div>
           <div style={{padding:'8px 10px',borderRadius:10,background:'rgba(34,197,94,.08)',marginBottom:8}}><p style={{margin:0,fontSize:12,color:C.tx,fontWeight:600}}>{mResult.d}</p></div>
@@ -966,7 +966,7 @@ function ExploreScreen({onToast}){
     </div>}
     {sub==='suggest'&&<div style={{animation:'fadeIn .3s ease'}}>
       <Card style={{padding:'10px',marginBottom:10,border:'1px solid rgba(249,200,70,.18)'}}><p style={{margin:'0 0 3px',fontSize:11,fontWeight:700,color:'#5B2C8D'}}>BoopSuggest — Personalizado</p><p style={{margin:0,fontSize:10.5,color:C.m2}}>Solo usa datos internos de la plataforma. Sin rastreo externo.</p></Card>
-      {[{t:'vet',n:'Veterinaria El Arca del Norte',d:'0.8 km · Col. Kennedy',ic:'shield',c:C.gr},{t:'match',n:'Laika podría ser compatible',d:'1.2 km · 92% compatibilidad',ic:'heart',c:C.r},{t:'record',n:'Vacuna de Rabia — Pimpy',d:'Vence el 15 enero 2025. Reserva cita.',ic:'bell',c:C.g},{t:'match',n:'Naranjita podría ser compatible',d:'1.5 km · 88% compatibilidad',ic:'heart',c:C.r},{t:'vet',n:'Clínica Vet. San Francisco',d:'1.4 km · Especialista dermatología',ic:'shield',c:C.gr}].map((sg,i)=><Card key={i} style={{padding:'10px',marginBottom:7}}>
+      {[{t:'vet',n:'Veterinaria El Arca del Norte',d:'0.8 km · Col. Kennedy',ic:'shield',c:C.gr},{t:'match',n:'Luna podría ser compatible',d:'1.2 km · 92% compatibilidad',ic:'heart',c:C.r},{t:'record',n:'Vacuna de Rabia — Lucho',d:'Vence el 15 enero 2025. Reserva cita.',ic:'bell',c:C.g},{t:'match',n:'Naranjita podría ser compatible',d:'1.5 km · 88% compatibilidad',ic:'heart',c:C.r},{t:'vet',n:'Clínica Vet. San Francisco',d:'1.4 km · Especialista dermatología',ic:'shield',c:C.gr}].map((sg,i)=><Card key={i} style={{padding:'10px',marginBottom:7}}>
         <div style={{display:'flex',gap:8,alignItems:'center'}}>
           <div style={{width:33,height:33,borderRadius:9,background:`${sg.c}12`,display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}><Ico n={sg.ic} s={16} c={sg.c}/></div>
           <div style={{flex:1}}><p style={{margin:0,fontSize:12,fontWeight:700,color:C.tx}}>{sg.n}</p><p style={{margin:0,fontSize:10.5,color:C.m}}>{sg.d}</p></div>
@@ -1004,22 +1004,22 @@ function ExploreScreen({onToast}){
 // ═════════════════════════════════════════
 function ChatModal({onClose}){
   const INIT_MSGS=[
-    {from:2,t:'Hola Andrea! Vi el perfil de Pimpy y creo que le caería muy bien a Laika.',time:'Ayer 3:20pm'},
-    {from:1,t:'Hola Carlos! Pimpy también es muy sociable. ¿En qué colonia estás?',time:'Ayer 3:25pm'},
+    {from:2,t:'Hola Andrea! Vi el perfil de Lucho y creo que le caería muy bien a Luna.',time:'Ayer 3:20pm'},
+    {from:1,t:'Hola Carlos! Lucho también es muy sociable. ¿En qué colonia estás?',time:'Ayer 3:25pm'},
     {from:2,t:'Estamos en Col. Kennedy, a 1.2 km. ¿Organizamos un paseo?',time:'Ayer 3:28pm'},
-    {from:1,t:'Perfecto! El sábado en el parque La Paz. Pimpy adora ese parque.',time:'Ayer 3:35pm'},
+    {from:1,t:'Perfecto! El sábado en el parque La Paz. Lucho adora ese parque.',time:'Ayer 3:35pm'},
     {from:2,t:'Nos vemos el sábado a las 8am en el parque La Paz!',time:'Ayer 3:40pm'},
   ];
   const[msgs,setMsgs]=useState(INIT_MSGS);const[inp,setInp]=useState('');const[typing,setTyping]=useState(false);
   const scrollRef=useRef(null);
   useEffect(()=>{if(scrollRef.current)scrollRef.current.scrollTop=scrollRef.current.scrollHeight;},[msgs,typing]);
-  const send=()=>{if(!inp.trim())return;setMsgs(m=>[...m,{from:1,t:inp,time:'ahora'}]);setInp('');setTyping(true);setTimeout(()=>{setTyping(false);setMsgs(m=>[...m,{from:2,t:'Perfecto! Laika viene muy emocionada!',time:'ahora'}]);},1600);};
+  const send=()=>{if(!inp.trim())return;setMsgs(m=>[...m,{from:1,t:inp,time:'ahora'}]);setInp('');setTyping(true);setTimeout(()=>{setTyping(false);setMsgs(m=>[...m,{from:2,t:'Perfecto! Luna viene muy emocionada!',time:'ahora'}]);},1600);};
   return(<div className="modal">
     <div className="mhdr">
       <BackBtn onClick={onClose}/>
       <div style={{display:'flex',alignItems:'center',gap:8,flex:1}}>
         <div style={{width:32,height:32,borderRadius:'50%',overflow:'hidden',border:`2px solid ${C.a}`}}><Img src={U.laika} style={{width:32,height:32}}/></div>
-        <div><h3>Carlos Mejía · Laika</h3><p style={{color:C.gr,fontSize:10}}>· En línea</p></div>
+        <div><h3>Carlos Mejía · Luna</h3><p style={{color:C.gr,fontSize:10}}>· En línea</p></div>
       </div>
     </div>
     <div style={{background:'rgba(108,63,232,.06)',padding:'5px 14px',borderBottom:`1px solid ${C.bd}`,flexShrink:0}}><p style={{margin:0,fontSize:9.5,color:C.m,textAlign:'center',fontStyle:'italic'}}>Chat desbloqueado tras BoopMatch mutuo · Phoenix Channels + WebSocket</p></div>
@@ -1057,7 +1057,7 @@ function WalkModal({onClose,onToast}){
     <div className="mhdr"><BackBtn onClick={st==='walking'?stop:onClose}/><div><h3>Paseo Activo GPS</h3><p>M09 · {st==='walking'?'En progreso':st==='done'?'Completado':'Listo'}</p></div>{st==='walking'&&<div style={{display:'flex',alignItems:'center',gap:3}}><div style={{width:6,height:6,borderRadius:'50%',background:C.r,animation:'pulse 1s ease-in-out infinite'}}/><span style={{fontSize:9,fontWeight:700,color:C.r,fontFamily:"'Space Mono',monospace"}}>LIVE</span></div>}</div>
     <div className="scroll" style={{padding:'12px 13px'}}>
     {st==='ready'&&<div style={{animation:'fadeIn .3s ease'}}>
-      <Card style={{padding:'11px',marginBottom:11,border:'1px solid rgba(0,180,216,.18)'}}><div style={{display:'flex',gap:8,alignItems:'center',marginBottom:6}}><Ico n="pin" s={16} c={C.b}/><p style={{margin:0,fontSize:12,fontWeight:700,color:C.b}}>Permiso de ubicación requerido</p></div><p style={{margin:'0 0 9px',fontSize:11.5,color:C.m,lineHeight:1.6}}>El paseo usa GPS en segundo plano para trazar el recorrido mientras la app está minimizada.</p><Btn full label="Iniciar Paseo con Pimpy" ic="activity" bg={C.gB} co={C.w} onClick={start}/></Card>
+      <Card style={{padding:'11px',marginBottom:11,border:'1px solid rgba(0,180,216,.18)'}}><div style={{display:'flex',gap:8,alignItems:'center',marginBottom:6}}><Ico n="pin" s={16} c={C.b}/><p style={{margin:0,fontSize:12,fontWeight:700,color:C.b}}>Permiso de ubicación requerido</p></div><p style={{margin:'0 0 9px',fontSize:11.5,color:C.m,lineHeight:1.6}}>El paseo usa GPS en segundo plano para trazar el recorrido mientras la app está minimizada.</p><Btn full label="Iniciar Paseo con Lucho" ic="activity" bg={C.gB} co={C.w} onClick={start}/></Card>
       <Card style={{padding:'10px 12px'}}><p style={{margin:'0 0 6px',fontSize:10.5,fontWeight:700,color:C.m,textTransform:'uppercase',letterSpacing:.5}}>Historial reciente</p>
         {[{f:'Lun 29 Abr',d:'2.3 km',t:'38 min',pts:46},{f:'Vie 26 Abr',d:'1.8 km',t:'28 min',pts:36}].map((h,i)=><div key={i} style={{display:'flex',gap:8,padding:'5px 0',borderBottom:i<1?`1px solid ${C.bd}`:'none'}}>
           <div style={{width:26,height:26,borderRadius:7,background:'rgba(0,180,216,.1)',display:'flex',alignItems:'center',justifyContent:'center'}}><Ico n="activity" s={13} c={C.b}/></div>
@@ -1615,7 +1615,7 @@ function RegistroModal({onClose,onToast}){
         <p style={{margin:'0 0 4px',fontSize:9.5,color:C.a,fontWeight:700,textTransform:'uppercase',letterSpacing:.5}}>Número de Registro Único (NRU) generado</p>
         <p style={{margin:'0 0 10px',fontFamily:"'Space Mono',monospace",fontSize:17,fontWeight:700,color:C.tx,letterSpacing:1}}>{nru}</p>
         <div style={{display:'flex',gap:7,flexWrap:'wrap'}}>
-          {[['Propietario',form.ownerName],['Mascota',form.petName||'Pimpy'],['Municipio','Tegucigalpa, MDC'],['Fecha',new Date().toLocaleDateString('es')]].map(([k,v])=><div key={k} style={{background:'rgba(255,255,255,.05)',borderRadius:8,padding:'5px 9px'}}><p style={{margin:0,fontSize:8,color:C.m2,fontWeight:700,textTransform:'uppercase'}}>{k}</p><p style={{margin:0,fontSize:11,color:C.tx,fontWeight:700}}>{v}</p></div>)}
+          {[['Propietario',form.ownerName],['Mascota',form.petName||'Lucho'],['Municipio','Tegucigalpa, MDC'],['Fecha',new Date().toLocaleDateString('es')]].map(([k,v])=><div key={k} style={{background:'rgba(255,255,255,.05)',borderRadius:8,padding:'5px 9px'}}><p style={{margin:0,fontSize:8,color:C.m2,fontWeight:700,textTransform:'uppercase'}}>{k}</p><p style={{margin:0,fontSize:11,color:C.tx,fontWeight:700}}>{v}</p></div>)}
         </div>
       </div>
       <div style={{display:'flex',gap:7,marginBottom:9}}>
